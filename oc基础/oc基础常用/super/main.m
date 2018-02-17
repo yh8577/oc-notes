@@ -1,0 +1,22 @@
+//
+//  main.m
+//  super
+//
+//  Created by jyh on 2018/1/22.
+//  Copyright © 2018年 jyh. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "Stutas.h"
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        
+        
+        Stutas *s = [[Stutas alloc] init];
+        
+        
+        [s call];
+        
+    }
+    return 0;
+}

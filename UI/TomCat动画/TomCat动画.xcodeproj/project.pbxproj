@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A68329DB2020E09A007C1CD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A68329DA2020E09A007C1CD4 /* AppDelegate.m */; };
+		A68329DE2020E09A007C1CD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68329DD2020E09A007C1CD4 /* ViewController.m */; };
+		A68329E12020E09A007C1CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68329DF2020E09A007C1CD4 /* Main.storyboard */; };
+		A68329E32020E09A007C1CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68329E22020E09A007C1CD4 /* Assets.xcassets */; };
+		A68329E62020E09A007C1CD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68329E42020E09A007C1CD4 /* LaunchScreen.storyboard */; };
+		A68329E92020E09A007C1CD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A68329E82020E09A007C1CD4 /* main.m */; };
+		A68329F32020E09A007C1CD4 /* TomCat__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68329F22020E09A007C1CD4 /* TomCat__Tests.m */; };
+		A68329FE2020E09A007C1CD4 /* TomCat__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A68329FD2020E09A007C1CD4 /* TomCat__UITests.m */; };
+		A683317B2020FD33007C1CD4 /* Animations in Resources */ = {isa = PBXBuildFile; fileRef = A683317A2020FD33007C1CD4 /* Animations */; };
+		A683317E2021A3CA007C1CD4 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = A683317D2021A3CA007C1CD4 /* ViewController1.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A68329EF2020E09A007C1CD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A68329CE2020E09A007C1CD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A68329D52020E09A007C1CD4;
+			remoteInfo = "TomCat动画";
+		};
+		A68329FA2020E09A007C1CD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A68329CE2020E09A007C1CD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A68329D52020E09A007C1CD4;
+			remoteInfo = "TomCat动画";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A68329D62020E09A007C1CD4 /* TomCat动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TomCat动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68329D92020E09A007C1CD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A68329DA2020E09A007C1CD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A68329DC2020E09A007C1CD4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A68329DD2020E09A007C1CD4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A68329E02020E09A007C1CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A68329E22020E09A007C1CD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A68329E52020E09A007C1CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A68329E72020E09A007C1CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68329E82020E09A007C1CD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A68329EE2020E09A007C1CD4 /* TomCat动画Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TomCat动画Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68329F22020E09A007C1CD4 /* TomCat__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TomCat__Tests.m; sourceTree = "<group>"; };
+		A68329F42020E09A007C1CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68329F92020E09A007C1CD4 /* TomCat动画UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TomCat动画UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68329FD2020E09A007C1CD4 /* TomCat__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TomCat__UITests.m; sourceTree = "<group>"; };
+		A68329FF2020E09A007C1CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A683317A2020FD33007C1CD4 /* Animations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Animations; sourceTree = "<group>"; };
+		A683317C2021A3CA007C1CD4 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		A683317D2021A3CA007C1CD4 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A68329D32020E09A007C1CD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68329EB2020E09A007C1CD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68329F62020E09A007C1CD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A68329CD2020E09A007C1CD4 = {
+			isa = PBXGroup;
+			children = (
+				A68329D82020E09A007C1CD4 /* TomCat动画 */,
+				A68329F12020E09A007C1CD4 /* TomCat动画Tests */,
+				A68329FC2020E09A007C1CD4 /* TomCat动画UITests */,
+				A68329D72020E09A007C1CD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A68329D72020E09A007C1CD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A68329D62020E09A007C1CD4 /* TomCat动画.app */,
+				A68329EE2020E09A007C1CD4 /* TomCat动画Tests.xctest */,
+				A68329F92020E09A007C1CD4 /* TomCat动画UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A68329D82020E09A007C1CD4 /* TomCat动画 */ = {
+			isa = PBXGroup;
+			children = (
+				A683317A2020FD33007C1CD4 /* Animations */,
+				A68329D92020E09A007C1CD4 /* AppDelegate.h */,
+				A68329DA2020E09A007C1CD4 /* AppDelegate.m */,
+				A68329DC2020E09A007C1CD4 /* ViewController.h */,
+				A68329DD2020E09A007C1CD4 /* ViewController.m */,
+				A683317C2021A3CA007C1CD4 /* ViewController1.h */,
+				A683317D2021A3CA007C1CD4 /* ViewController1.m */,
+				A68329DF2020E09A007C1CD4 /* Main.storyboard */,
+				A68329E22020E09A007C1CD4 /* Assets.xcassets */,
+				A68329E42020E09A007C1CD4 /* LaunchScreen.storyboard */,
+				A68329E72020E09A007C1CD4 /* Info.plist */,
+				A68329E82020E09A007C1CD4 /* main.m */,
+			);
+			path = "TomCat动画";
+			sourceTree = "<group>";
+		};
+		A68329F12020E09A007C1CD4 /* TomCat动画Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A68329F22020E09A007C1CD4 /* TomCat__Tests.m */,
+				A68329F42020E09A007C1CD4 /* Info.plist */,
+			);
+			path = "TomCat动画Tests";
+			sourceTree = "<group>";
+		};
+		A68329FC2020E09A007C1CD4 /* TomCat动画UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A68329FD2020E09A007C1CD4 /* TomCat__UITests.m */,
+				A68329FF2020E09A007C1CD4 /* Info.plist */,
+			);
+			path = "TomCat动画UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A68329D52020E09A007C1CD4 /* TomCat动画 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6832A022020E09A007C1CD4 /* Build configuration list for PBXNativeTarget "TomCat动画" */;
+			buildPhases = (
+				A68329D22020E09A007C1CD4 /* Sources */,
+				A68329D32020E09A007C1CD4 /* Frameworks */,
+				A68329D42020E09A007C1CD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TomCat动画";
+			productName = "TomCat动画";
+			productReference = A68329D62020E09A007C1CD4 /* TomCat动画.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A68329ED2020E09A007C1CD4 /* TomCat动画Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6832A052020E09A007C1CD4 /* Build configuration list for PBXNativeTarget "TomCat动画Tests" */;
+			buildPhases = (
+				A68329EA2020E09A007C1CD4 /* Sources */,
+				A68329EB2020E09A007C1CD4 /* Frameworks */,
+				A68329EC2020E09A007C1CD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A68329F02020E09A007C1CD4 /* PBXTargetDependency */,
+			);
+			name = "TomCat动画Tests";
+			productName = "TomCat动画Tests";
+			productReference = A68329EE2020E09A007C1CD4 /* TomCat动画Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A68329F82020E09A007C1CD4 /* TomCat动画UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6832A082020E09A007C1CD4 /* Build configuration list for PBXNativeTarget "TomCat动画UITests" */;
+			buildPhases = (
+				A68329F52020E09A007C1CD4 /* Sources */,
+				A68329F62020E09A007C1CD4 /* Frameworks */,
+				A68329F72020E09A007C1CD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A68329FB2020E09A007C1CD4 /* PBXTargetDependency */,
+			);
+			name = "TomCat动画UITests";
+			productName = "TomCat动画UITests";
+			productReference = A68329F92020E09A007C1CD4 /* TomCat动画UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A68329CE2020E09A007C1CD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jyh;
+				TargetAttributes = {
+					A68329D52020E09A007C1CD4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A68329ED2020E09A007C1CD4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A68329D52020E09A007C1CD4;
+					};
+					A68329F82020E09A007C1CD4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A68329D52020E09A007C1CD4;
+					};
+				};
+			};
+			buildConfigurationList = A68329D12020E09A007C1CD4 /* Build configuration list for PBXProject "TomCat动画" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A68329CD2020E09A007C1CD4;
+			productRefGroup = A68329D72020E09A007C1CD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A68329D52020E09A007C1CD4 /* TomCat动画 */,
+				A68329ED2020E09A007C1CD4 /* TomCat动画Tests */,
+				A68329F82020E09A007C1CD4 /* TomCat动画UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A68329D42020E09A007C1CD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A683317B2020FD33007C1CD4 /* Animations in Resources */,
+				A68329E62020E09A007C1CD4 /* LaunchScreen.storyboard in Resources */,
+				A68329E32020E09A007C1CD4 /* Assets.xcassets in Resources */,
+				A68329E12020E09A007C1CD4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68329EC2020E09A007C1CD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68329F72020E09A007C1CD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A68329D22020E09A007C1CD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A683317E2021A3CA007C1CD4 /* ViewController1.m in Sources */,
+				A68329DE2020E09A007C1CD4 /* ViewController.m in Sources */,
+				A68329E92020E09A007C1CD4 /* main.m in Sources */,
+				A68329DB2020E09A007C1CD4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68329EA2020E09A007C1CD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68329F32020E09A007C1CD4 /* TomCat__Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A68329F52020E09A007C1CD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68329FE2020E09A007C1CD4 /* TomCat__UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A68329F02020E09A007C1CD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A68329D52020E09A007C1CD4 /* TomCat动画 */;
+			targetProxy = A68329EF2020E09A007C1CD4 /* PBXContainerItemProxy */;
+		};
+		A68329FB2020E09A007C1CD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A68329D52020E09A007C1CD4 /* TomCat动画 */;
+			targetProxy = A68329FA2020E09A007C1CD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A68329DF2020E09A007C1CD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68329E02020E09A007C1CD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A68329E42020E09A007C1CD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A68329E52020E09A007C1CD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6832A002020E09A007C1CD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6832A012020E09A007C1CD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6832A032020E09A007C1CD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TomCat动画/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.TomCat--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6832A042020E09A007C1CD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TomCat动画/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.TomCat--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6832A062020E09A007C1CD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TomCat动画Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.TomCat--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TomCat动画.app/TomCat动画";
+			};
+			name = Debug;
+		};
+		A6832A072020E09A007C1CD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TomCat动画Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.TomCat--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TomCat动画.app/TomCat动画";
+			};
+			name = Release;
+		};
+		A6832A092020E09A007C1CD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TomCat动画UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.TomCat--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TomCat动画";
+			};
+			name = Debug;
+		};
+		A6832A0A2020E09A007C1CD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TomCat动画UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.TomCat--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TomCat动画";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A68329D12020E09A007C1CD4 /* Build configuration list for PBXProject "TomCat动画" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6832A002020E09A007C1CD4 /* Debug */,
+				A6832A012020E09A007C1CD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6832A022020E09A007C1CD4 /* Build configuration list for PBXNativeTarget "TomCat动画" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6832A032020E09A007C1CD4 /* Debug */,
+				A6832A042020E09A007C1CD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6832A052020E09A007C1CD4 /* Build configuration list for PBXNativeTarget "TomCat动画Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6832A062020E09A007C1CD4 /* Debug */,
+				A6832A072020E09A007C1CD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6832A082020E09A007C1CD4 /* Build configuration list for PBXNativeTarget "TomCat动画UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6832A092020E09A007C1CD4 /* Debug */,
+				A6832A0A2020E09A007C1CD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A68329CE2020E09A007C1CD4 /* Project object */;
+}

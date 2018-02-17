@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A62BDEF92020A37600600E2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A62BDEF82020A37600600E2D /* AppDelegate.m */; };
+		A62BDEFC2020A37600600E2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62BDEFB2020A37600600E2D /* ViewController.m */; };
+		A62BDEFF2020A37600600E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62BDEFD2020A37600600E2D /* Main.storyboard */; };
+		A62BDF012020A37600600E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62BDF002020A37600600E2D /* Assets.xcassets */; };
+		A62BDF042020A37600600E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62BDF022020A37600600E2D /* LaunchScreen.storyboard */; };
+		A62BDF072020A37600600E2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A62BDF062020A37600600E2D /* main.m */; };
+		A62BDF112020A37700600E2D /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62BDF102020A37700600E2D /* _____Tests.m */; };
+		A62BDF1C2020A37700600E2D /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62BDF1B2020A37700600E2D /* _____UITests.m */; };
+		A62BDF2E2020AB0C00600E2D /* pic.plist in Resources */ = {isa = PBXBuildFile; fileRef = A62BDF2D2020AB0C00600E2D /* pic.plist */; };
+		A68331812021B7CC007C1CD4 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = A68331802021B7CC007C1CD4 /* ViewController1.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A62BDF0D2020A37700600E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A62BDEEC2020A37600600E2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62BDEF32020A37600600E2D;
+			remoteInfo = "图片浏览器";
+		};
+		A62BDF182020A37700600E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A62BDEEC2020A37600600E2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62BDEF32020A37600600E2D;
+			remoteInfo = "图片浏览器";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A62BDEF42020A37600600E2D /* 图片浏览器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "图片浏览器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62BDEF72020A37600600E2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A62BDEF82020A37600600E2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A62BDEFA2020A37600600E2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A62BDEFB2020A37600600E2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A62BDEFE2020A37600600E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A62BDF002020A37600600E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A62BDF032020A37600600E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A62BDF052020A37600600E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62BDF062020A37600600E2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A62BDF0C2020A37700600E2D /* 图片浏览器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "图片浏览器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62BDF102020A37700600E2D /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		A62BDF122020A37700600E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62BDF172020A37700600E2D /* 图片浏览器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "图片浏览器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62BDF1B2020A37700600E2D /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
+		A62BDF1D2020A37700600E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62BDF2D2020AB0C00600E2D /* pic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pic.plist; sourceTree = "<group>"; };
+		A683317F2021B7CC007C1CD4 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		A68331802021B7CC007C1CD4 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A62BDEF12020A37600600E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62BDF092020A37700600E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62BDF142020A37700600E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A62BDEEB2020A37600600E2D = {
+			isa = PBXGroup;
+			children = (
+				A62BDEF62020A37600600E2D /* 图片浏览器 */,
+				A62BDF0F2020A37700600E2D /* 图片浏览器Tests */,
+				A62BDF1A2020A37700600E2D /* 图片浏览器UITests */,
+				A62BDEF52020A37600600E2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A62BDEF52020A37600600E2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A62BDEF42020A37600600E2D /* 图片浏览器.app */,
+				A62BDF0C2020A37700600E2D /* 图片浏览器Tests.xctest */,
+				A62BDF172020A37700600E2D /* 图片浏览器UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A62BDEF62020A37600600E2D /* 图片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				A62BDEF72020A37600600E2D /* AppDelegate.h */,
+				A62BDEF82020A37600600E2D /* AppDelegate.m */,
+				A62BDEFA2020A37600600E2D /* ViewController.h */,
+				A62BDEFB2020A37600600E2D /* ViewController.m */,
+				A683317F2021B7CC007C1CD4 /* ViewController1.h */,
+				A68331802021B7CC007C1CD4 /* ViewController1.m */,
+				A62BDEFD2020A37600600E2D /* Main.storyboard */,
+				A62BDF002020A37600600E2D /* Assets.xcassets */,
+				A62BDF2D2020AB0C00600E2D /* pic.plist */,
+				A62BDF022020A37600600E2D /* LaunchScreen.storyboard */,
+				A62BDF052020A37600600E2D /* Info.plist */,
+				A62BDF062020A37600600E2D /* main.m */,
+			);
+			path = "图片浏览器";
+			sourceTree = "<group>";
+		};
+		A62BDF0F2020A37700600E2D /* 图片浏览器Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A62BDF102020A37700600E2D /* _____Tests.m */,
+				A62BDF122020A37700600E2D /* Info.plist */,
+			);
+			path = "图片浏览器Tests";
+			sourceTree = "<group>";
+		};
+		A62BDF1A2020A37700600E2D /* 图片浏览器UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A62BDF1B2020A37700600E2D /* _____UITests.m */,
+				A62BDF1D2020A37700600E2D /* Info.plist */,
+			);
+			path = "图片浏览器UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A62BDEF32020A37600600E2D /* 图片浏览器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62BDF202020A37700600E2D /* Build configuration list for PBXNativeTarget "图片浏览器" */;
+			buildPhases = (
+				A62BDEF02020A37600600E2D /* Sources */,
+				A62BDEF12020A37600600E2D /* Frameworks */,
+				A62BDEF22020A37600600E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "图片浏览器";
+			productName = "图片浏览器";
+			productReference = A62BDEF42020A37600600E2D /* 图片浏览器.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A62BDF0B2020A37700600E2D /* 图片浏览器Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62BDF232020A37700600E2D /* Build configuration list for PBXNativeTarget "图片浏览器Tests" */;
+			buildPhases = (
+				A62BDF082020A37700600E2D /* Sources */,
+				A62BDF092020A37700600E2D /* Frameworks */,
+				A62BDF0A2020A37700600E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62BDF0E2020A37700600E2D /* PBXTargetDependency */,
+			);
+			name = "图片浏览器Tests";
+			productName = "图片浏览器Tests";
+			productReference = A62BDF0C2020A37700600E2D /* 图片浏览器Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A62BDF162020A37700600E2D /* 图片浏览器UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62BDF262020A37700600E2D /* Build configuration list for PBXNativeTarget "图片浏览器UITests" */;
+			buildPhases = (
+				A62BDF132020A37700600E2D /* Sources */,
+				A62BDF142020A37700600E2D /* Frameworks */,
+				A62BDF152020A37700600E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62BDF192020A37700600E2D /* PBXTargetDependency */,
+			);
+			name = "图片浏览器UITests";
+			productName = "图片浏览器UITests";
+			productReference = A62BDF172020A37700600E2D /* 图片浏览器UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A62BDEEC2020A37600600E2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jyh;
+				TargetAttributes = {
+					A62BDEF32020A37600600E2D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A62BDF0B2020A37700600E2D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A62BDEF32020A37600600E2D;
+					};
+					A62BDF162020A37700600E2D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A62BDEF32020A37600600E2D;
+					};
+				};
+			};
+			buildConfigurationList = A62BDEEF2020A37600600E2D /* Build configuration list for PBXProject "图片浏览器" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A62BDEEB2020A37600600E2D;
+			productRefGroup = A62BDEF52020A37600600E2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A62BDEF32020A37600600E2D /* 图片浏览器 */,
+				A62BDF0B2020A37700600E2D /* 图片浏览器Tests */,
+				A62BDF162020A37700600E2D /* 图片浏览器UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A62BDEF22020A37600600E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62BDF042020A37600600E2D /* LaunchScreen.storyboard in Resources */,
+				A62BDF012020A37600600E2D /* Assets.xcassets in Resources */,
+				A62BDEFF2020A37600600E2D /* Main.storyboard in Resources */,
+				A62BDF2E2020AB0C00600E2D /* pic.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62BDF0A2020A37700600E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62BDF152020A37700600E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A62BDEF02020A37600600E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68331812021B7CC007C1CD4 /* ViewController1.m in Sources */,
+				A62BDEFC2020A37600600E2D /* ViewController.m in Sources */,
+				A62BDF072020A37600600E2D /* main.m in Sources */,
+				A62BDEF92020A37600600E2D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62BDF082020A37700600E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62BDF112020A37700600E2D /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62BDF132020A37700600E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62BDF1C2020A37700600E2D /* _____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A62BDF0E2020A37700600E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62BDEF32020A37600600E2D /* 图片浏览器 */;
+			targetProxy = A62BDF0D2020A37700600E2D /* PBXContainerItemProxy */;
+		};
+		A62BDF192020A37700600E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62BDEF32020A37600600E2D /* 图片浏览器 */;
+			targetProxy = A62BDF182020A37700600E2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A62BDEFD2020A37600600E2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62BDEFE2020A37600600E2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A62BDF022020A37600600E2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62BDF032020A37600600E2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A62BDF1E2020A37700600E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A62BDF1F2020A37700600E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A62BDF212020A37700600E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "图片浏览器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A62BDF222020A37700600E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "图片浏览器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A62BDF242020A37700600E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "图片浏览器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/图片浏览器.app/图片浏览器";
+			};
+			name = Debug;
+		};
+		A62BDF252020A37700600E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "图片浏览器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/图片浏览器.app/图片浏览器";
+			};
+			name = Release;
+		};
+		A62BDF272020A37700600E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "图片浏览器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "图片浏览器";
+			};
+			name = Debug;
+		};
+		A62BDF282020A37700600E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "图片浏览器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "图片浏览器";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A62BDEEF2020A37600600E2D /* Build configuration list for PBXProject "图片浏览器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62BDF1E2020A37700600E2D /* Debug */,
+				A62BDF1F2020A37700600E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62BDF202020A37700600E2D /* Build configuration list for PBXNativeTarget "图片浏览器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62BDF212020A37700600E2D /* Debug */,
+				A62BDF222020A37700600E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62BDF232020A37700600E2D /* Build configuration list for PBXNativeTarget "图片浏览器Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62BDF242020A37700600E2D /* Debug */,
+				A62BDF252020A37700600E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62BDF262020A37700600E2D /* Build configuration list for PBXNativeTarget "图片浏览器UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62BDF272020A37700600E2D /* Debug */,
+				A62BDF282020A37700600E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A62BDEEC2020A37600600E2D /* Project object */;
+}

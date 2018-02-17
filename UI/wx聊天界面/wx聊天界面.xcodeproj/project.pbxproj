@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6ABC516202C906500429ECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC515202C906500429ECA /* AppDelegate.m */; };
+		A6ABC51C202C906500429ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6ABC51A202C906500429ECA /* Main.storyboard */; };
+		A6ABC51E202C906500429ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6ABC51D202C906500429ECA /* Assets.xcassets */; };
+		A6ABC521202C906500429ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6ABC51F202C906500429ECA /* LaunchScreen.storyboard */; };
+		A6ABC524202C906500429ECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC523202C906500429ECA /* main.m */; };
+		A6ABC52E202C906500429ECA /* wx____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC52D202C906500429ECA /* wx____Tests.m */; };
+		A6ABC539202C906500429ECA /* wx____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC538202C906500429ECA /* wx____UITests.m */; };
+		A6ABC548202C91D800429ECA /* WXMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC547202C91D800429ECA /* WXMessageController.m */; };
+		A6ABC557202C93B200429ECA /* WXMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC556202C93B200429ECA /* WXMessageModel.m */; };
+		A6ABC559202C949C00429ECA /* message.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6ABC558202C949C00429ECA /* message.plist */; };
+		A6ABC55C202C961400429ECA /* WXMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC55B202C961400429ECA /* WXMessageCell.m */; };
+		A6ABC55F202C99DD00429ECA /* WXMessageFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC55E202C99DD00429ECA /* WXMessageFrameModel.m */; };
+		A6ABC562202C9B0700429ECA /* NSString+QQNSStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC561202C9B0700429ECA /* NSString+QQNSStringExt.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6ABC52A202C906500429ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6ABC509202C906500429ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6ABC510202C906500429ECA;
+			remoteInfo = "wx聊天界面";
+		};
+		A6ABC535202C906500429ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6ABC509202C906500429ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6ABC510202C906500429ECA;
+			remoteInfo = "wx聊天界面";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6ABC511202C906500429ECA /* wx聊天界面.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wx聊天界面.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6ABC514202C906500429ECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6ABC515202C906500429ECA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6ABC51B202C906500429ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6ABC51D202C906500429ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6ABC520202C906500429ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6ABC522202C906500429ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6ABC523202C906500429ECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6ABC529202C906500429ECA /* wx聊天界面Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wx聊天界面Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6ABC52D202C906500429ECA /* wx____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "wx____Tests.m"; sourceTree = "<group>"; };
+		A6ABC52F202C906500429ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6ABC534202C906500429ECA /* wx聊天界面UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wx聊天界面UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6ABC538202C906500429ECA /* wx____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "wx____UITests.m"; sourceTree = "<group>"; };
+		A6ABC53A202C906500429ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6ABC546202C91D800429ECA /* WXMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXMessageController.h; sourceTree = "<group>"; };
+		A6ABC547202C91D800429ECA /* WXMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXMessageController.m; sourceTree = "<group>"; };
+		A6ABC555202C93B200429ECA /* WXMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXMessageModel.h; sourceTree = "<group>"; };
+		A6ABC556202C93B200429ECA /* WXMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXMessageModel.m; sourceTree = "<group>"; };
+		A6ABC558202C949C00429ECA /* message.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = message.plist; sourceTree = "<group>"; };
+		A6ABC55A202C961400429ECA /* WXMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXMessageCell.h; sourceTree = "<group>"; };
+		A6ABC55B202C961400429ECA /* WXMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXMessageCell.m; sourceTree = "<group>"; };
+		A6ABC55D202C99DD00429ECA /* WXMessageFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXMessageFrameModel.h; sourceTree = "<group>"; };
+		A6ABC55E202C99DD00429ECA /* WXMessageFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXMessageFrameModel.m; sourceTree = "<group>"; };
+		A6ABC560202C9B0700429ECA /* NSString+QQNSStringExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QQNSStringExt.h"; sourceTree = "<group>"; };
+		A6ABC561202C9B0700429ECA /* NSString+QQNSStringExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QQNSStringExt.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6ABC50E202C906500429ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC526202C906500429ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC531202C906500429ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6ABC508202C906500429ECA = {
+			isa = PBXGroup;
+			children = (
+				A6ABC513202C906500429ECA /* wx聊天界面 */,
+				A6ABC52C202C906500429ECA /* wx聊天界面Tests */,
+				A6ABC537202C906500429ECA /* wx聊天界面UITests */,
+				A6ABC512202C906500429ECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6ABC512202C906500429ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC511202C906500429ECA /* wx聊天界面.app */,
+				A6ABC529202C906500429ECA /* wx聊天界面Tests.xctest */,
+				A6ABC534202C906500429ECA /* wx聊天界面UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6ABC513202C906500429ECA /* wx聊天界面 */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC554202C933E00429ECA /* Sources */,
+				A6ABC54F202C921B00429ECA /* Models */,
+				A6ABC54D202C920900429ECA /* Views */,
+				A6ABC54B202C91F700429ECA /* Controllers */,
+				A6ABC549202C91E100429ECA /* Others */,
+				A6ABC51D202C906500429ECA /* Assets.xcassets */,
+			);
+			path = "wx聊天界面";
+			sourceTree = "<group>";
+		};
+		A6ABC52C202C906500429ECA /* wx聊天界面Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC52D202C906500429ECA /* wx____Tests.m */,
+				A6ABC52F202C906500429ECA /* Info.plist */,
+			);
+			path = "wx聊天界面Tests";
+			sourceTree = "<group>";
+		};
+		A6ABC537202C906500429ECA /* wx聊天界面UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC538202C906500429ECA /* wx____UITests.m */,
+				A6ABC53A202C906500429ECA /* Info.plist */,
+			);
+			path = "wx聊天界面UITests";
+			sourceTree = "<group>";
+		};
+		A6ABC549202C91E100429ECA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC560202C9B0700429ECA /* NSString+QQNSStringExt.h */,
+				A6ABC561202C9B0700429ECA /* NSString+QQNSStringExt.m */,
+				A6ABC514202C906500429ECA /* AppDelegate.h */,
+				A6ABC515202C906500429ECA /* AppDelegate.m */,
+				A6ABC522202C906500429ECA /* Info.plist */,
+				A6ABC523202C906500429ECA /* main.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		A6ABC54B202C91F700429ECA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC546202C91D800429ECA /* WXMessageController.h */,
+				A6ABC547202C91D800429ECA /* WXMessageController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A6ABC54D202C920900429ECA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC51A202C906500429ECA /* Main.storyboard */,
+				A6ABC51F202C906500429ECA /* LaunchScreen.storyboard */,
+				A6ABC55A202C961400429ECA /* WXMessageCell.h */,
+				A6ABC55B202C961400429ECA /* WXMessageCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A6ABC54F202C921B00429ECA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC555202C93B200429ECA /* WXMessageModel.h */,
+				A6ABC556202C93B200429ECA /* WXMessageModel.m */,
+				A6ABC55D202C99DD00429ECA /* WXMessageFrameModel.h */,
+				A6ABC55E202C99DD00429ECA /* WXMessageFrameModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A6ABC554202C933E00429ECA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC558202C949C00429ECA /* message.plist */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6ABC510202C906500429ECA /* wx聊天界面 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6ABC53D202C906500429ECA /* Build configuration list for PBXNativeTarget "wx聊天界面" */;
+			buildPhases = (
+				A6ABC50D202C906500429ECA /* Sources */,
+				A6ABC50E202C906500429ECA /* Frameworks */,
+				A6ABC50F202C906500429ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wx聊天界面";
+			productName = "wx聊天界面";
+			productReference = A6ABC511202C906500429ECA /* wx聊天界面.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6ABC528202C906500429ECA /* wx聊天界面Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6ABC540202C906500429ECA /* Build configuration list for PBXNativeTarget "wx聊天界面Tests" */;
+			buildPhases = (
+				A6ABC525202C906500429ECA /* Sources */,
+				A6ABC526202C906500429ECA /* Frameworks */,
+				A6ABC527202C906500429ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6ABC52B202C906500429ECA /* PBXTargetDependency */,
+			);
+			name = "wx聊天界面Tests";
+			productName = "wx聊天界面Tests";
+			productReference = A6ABC529202C906500429ECA /* wx聊天界面Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6ABC533202C906500429ECA /* wx聊天界面UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6ABC543202C906500429ECA /* Build configuration list for PBXNativeTarget "wx聊天界面UITests" */;
+			buildPhases = (
+				A6ABC530202C906500429ECA /* Sources */,
+				A6ABC531202C906500429ECA /* Frameworks */,
+				A6ABC532202C906500429ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6ABC536202C906500429ECA /* PBXTargetDependency */,
+			);
+			name = "wx聊天界面UITests";
+			productName = "wx聊天界面UITests";
+			productReference = A6ABC534202C906500429ECA /* wx聊天界面UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6ABC509202C906500429ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jyh;
+				TargetAttributes = {
+					A6ABC510202C906500429ECA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A6ABC528202C906500429ECA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6ABC510202C906500429ECA;
+					};
+					A6ABC533202C906500429ECA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6ABC510202C906500429ECA;
+					};
+				};
+			};
+			buildConfigurationList = A6ABC50C202C906500429ECA /* Build configuration list for PBXProject "wx聊天界面" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6ABC508202C906500429ECA;
+			productRefGroup = A6ABC512202C906500429ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6ABC510202C906500429ECA /* wx聊天界面 */,
+				A6ABC528202C906500429ECA /* wx聊天界面Tests */,
+				A6ABC533202C906500429ECA /* wx聊天界面UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6ABC50F202C906500429ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ABC559202C949C00429ECA /* message.plist in Resources */,
+				A6ABC521202C906500429ECA /* LaunchScreen.storyboard in Resources */,
+				A6ABC51E202C906500429ECA /* Assets.xcassets in Resources */,
+				A6ABC51C202C906500429ECA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC527202C906500429ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC532202C906500429ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6ABC50D202C906500429ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ABC562202C9B0700429ECA /* NSString+QQNSStringExt.m in Sources */,
+				A6ABC557202C93B200429ECA /* WXMessageModel.m in Sources */,
+				A6ABC548202C91D800429ECA /* WXMessageController.m in Sources */,
+				A6ABC55F202C99DD00429ECA /* WXMessageFrameModel.m in Sources */,
+				A6ABC55C202C961400429ECA /* WXMessageCell.m in Sources */,
+				A6ABC524202C906500429ECA /* main.m in Sources */,
+				A6ABC516202C906500429ECA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC525202C906500429ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ABC52E202C906500429ECA /* wx____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC530202C906500429ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ABC539202C906500429ECA /* wx____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6ABC52B202C906500429ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6ABC510202C906500429ECA /* wx聊天界面 */;
+			targetProxy = A6ABC52A202C906500429ECA /* PBXContainerItemProxy */;
+		};
+		A6ABC536202C906500429ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6ABC510202C906500429ECA /* wx聊天界面 */;
+			targetProxy = A6ABC535202C906500429ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6ABC51A202C906500429ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6ABC51B202C906500429ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6ABC51F202C906500429ECA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6ABC520202C906500429ECA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6ABC53B202C906500429ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6ABC53C202C906500429ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6ABC53E202C906500429ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "wx聊天界面/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.wx----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6ABC53F202C906500429ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "wx聊天界面/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.wx----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6ABC541202C906500429ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "wx聊天界面Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.wx----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wx聊天界面.app/wx聊天界面";
+			};
+			name = Debug;
+		};
+		A6ABC542202C906500429ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "wx聊天界面Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.wx----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wx聊天界面.app/wx聊天界面";
+			};
+			name = Release;
+		};
+		A6ABC544202C906500429ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "wx聊天界面UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.wx----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wx聊天界面";
+			};
+			name = Debug;
+		};
+		A6ABC545202C906500429ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "wx聊天界面UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.wx----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wx聊天界面";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6ABC50C202C906500429ECA /* Build configuration list for PBXProject "wx聊天界面" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6ABC53B202C906500429ECA /* Debug */,
+				A6ABC53C202C906500429ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6ABC53D202C906500429ECA /* Build configuration list for PBXNativeTarget "wx聊天界面" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6ABC53E202C906500429ECA /* Debug */,
+				A6ABC53F202C906500429ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6ABC540202C906500429ECA /* Build configuration list for PBXNativeTarget "wx聊天界面Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6ABC541202C906500429ECA /* Debug */,
+				A6ABC542202C906500429ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6ABC543202C906500429ECA /* Build configuration list for PBXNativeTarget "wx聊天界面UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6ABC544202C906500429ECA /* Debug */,
+				A6ABC545202C906500429ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6ABC509202C906500429ECA /* Project object */;
+}

@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6ABC4D8202C379300429ECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC4D7202C379300429ECA /* AppDelegate.m */; };
+		A6ABC4DB202C379300429ECA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC4DA202C379300429ECA /* ViewController.m */; };
+		A6ABC4DE202C379300429ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6ABC4DC202C379300429ECA /* Main.storyboard */; };
+		A6ABC4E0202C379300429ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6ABC4DF202C379300429ECA /* Assets.xcassets */; };
+		A6ABC4E3202C379300429ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6ABC4E1202C379300429ECA /* LaunchScreen.storyboard */; };
+		A6ABC4E6202C379300429ECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC4E5202C379300429ECA /* main.m */; };
+		A6ABC4F0202C379300429ECA /* ________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC4EF202C379300429ECA /* ________Tests.m */; };
+		A6ABC4FB202C379400429ECA /* ________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6ABC4FA202C379400429ECA /* ________UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6ABC4EC202C379300429ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6ABC4CB202C379300429ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6ABC4D2202C379300429ECA;
+			remoteInfo = "通过约束实现动画";
+		};
+		A6ABC4F7202C379400429ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6ABC4CB202C379300429ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6ABC4D2202C379300429ECA;
+			remoteInfo = "通过约束实现动画";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6ABC4D3202C379300429ECA /* 通过约束实现动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "通过约束实现动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6ABC4D6202C379300429ECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6ABC4D7202C379300429ECA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6ABC4D9202C379300429ECA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A6ABC4DA202C379300429ECA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A6ABC4DD202C379300429ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6ABC4DF202C379300429ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6ABC4E2202C379300429ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6ABC4E4202C379300429ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6ABC4E5202C379300429ECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6ABC4EB202C379300429ECA /* 通过约束实现动画Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "通过约束实现动画Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6ABC4EF202C379300429ECA /* ________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________Tests.m"; sourceTree = "<group>"; };
+		A6ABC4F1202C379300429ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6ABC4F6202C379400429ECA /* 通过约束实现动画UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "通过约束实现动画UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6ABC4FA202C379400429ECA /* ________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________UITests.m"; sourceTree = "<group>"; };
+		A6ABC4FC202C379400429ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6ABC4D0202C379300429ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC4E8202C379300429ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC4F3202C379400429ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6ABC4CA202C379300429ECA = {
+			isa = PBXGroup;
+			children = (
+				A6ABC4D5202C379300429ECA /* 通过约束实现动画 */,
+				A6ABC4EE202C379300429ECA /* 通过约束实现动画Tests */,
+				A6ABC4F9202C379400429ECA /* 通过约束实现动画UITests */,
+				A6ABC4D4202C379300429ECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6ABC4D4202C379300429ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC4D3202C379300429ECA /* 通过约束实现动画.app */,
+				A6ABC4EB202C379300429ECA /* 通过约束实现动画Tests.xctest */,
+				A6ABC4F6202C379400429ECA /* 通过约束实现动画UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6ABC4D5202C379300429ECA /* 通过约束实现动画 */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC4D6202C379300429ECA /* AppDelegate.h */,
+				A6ABC4D7202C379300429ECA /* AppDelegate.m */,
+				A6ABC4D9202C379300429ECA /* ViewController.h */,
+				A6ABC4DA202C379300429ECA /* ViewController.m */,
+				A6ABC4DC202C379300429ECA /* Main.storyboard */,
+				A6ABC4DF202C379300429ECA /* Assets.xcassets */,
+				A6ABC4E1202C379300429ECA /* LaunchScreen.storyboard */,
+				A6ABC4E4202C379300429ECA /* Info.plist */,
+				A6ABC4E5202C379300429ECA /* main.m */,
+			);
+			path = "通过约束实现动画";
+			sourceTree = "<group>";
+		};
+		A6ABC4EE202C379300429ECA /* 通过约束实现动画Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC4EF202C379300429ECA /* ________Tests.m */,
+				A6ABC4F1202C379300429ECA /* Info.plist */,
+			);
+			path = "通过约束实现动画Tests";
+			sourceTree = "<group>";
+		};
+		A6ABC4F9202C379400429ECA /* 通过约束实现动画UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABC4FA202C379400429ECA /* ________UITests.m */,
+				A6ABC4FC202C379400429ECA /* Info.plist */,
+			);
+			path = "通过约束实现动画UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6ABC4D2202C379300429ECA /* 通过约束实现动画 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6ABC4FF202C379400429ECA /* Build configuration list for PBXNativeTarget "通过约束实现动画" */;
+			buildPhases = (
+				A6ABC4CF202C379300429ECA /* Sources */,
+				A6ABC4D0202C379300429ECA /* Frameworks */,
+				A6ABC4D1202C379300429ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "通过约束实现动画";
+			productName = "通过约束实现动画";
+			productReference = A6ABC4D3202C379300429ECA /* 通过约束实现动画.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6ABC4EA202C379300429ECA /* 通过约束实现动画Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6ABC502202C379400429ECA /* Build configuration list for PBXNativeTarget "通过约束实现动画Tests" */;
+			buildPhases = (
+				A6ABC4E7202C379300429ECA /* Sources */,
+				A6ABC4E8202C379300429ECA /* Frameworks */,
+				A6ABC4E9202C379300429ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6ABC4ED202C379300429ECA /* PBXTargetDependency */,
+			);
+			name = "通过约束实现动画Tests";
+			productName = "通过约束实现动画Tests";
+			productReference = A6ABC4EB202C379300429ECA /* 通过约束实现动画Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6ABC4F5202C379400429ECA /* 通过约束实现动画UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6ABC505202C379400429ECA /* Build configuration list for PBXNativeTarget "通过约束实现动画UITests" */;
+			buildPhases = (
+				A6ABC4F2202C379400429ECA /* Sources */,
+				A6ABC4F3202C379400429ECA /* Frameworks */,
+				A6ABC4F4202C379400429ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6ABC4F8202C379400429ECA /* PBXTargetDependency */,
+			);
+			name = "通过约束实现动画UITests";
+			productName = "通过约束实现动画UITests";
+			productReference = A6ABC4F6202C379400429ECA /* 通过约束实现动画UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6ABC4CB202C379300429ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jyh;
+				TargetAttributes = {
+					A6ABC4D2202C379300429ECA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A6ABC4EA202C379300429ECA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6ABC4D2202C379300429ECA;
+					};
+					A6ABC4F5202C379400429ECA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6ABC4D2202C379300429ECA;
+					};
+				};
+			};
+			buildConfigurationList = A6ABC4CE202C379300429ECA /* Build configuration list for PBXProject "通过约束实现动画" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6ABC4CA202C379300429ECA;
+			productRefGroup = A6ABC4D4202C379300429ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6ABC4D2202C379300429ECA /* 通过约束实现动画 */,
+				A6ABC4EA202C379300429ECA /* 通过约束实现动画Tests */,
+				A6ABC4F5202C379400429ECA /* 通过约束实现动画UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6ABC4D1202C379300429ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ABC4E3202C379300429ECA /* LaunchScreen.storyboard in Resources */,
+				A6ABC4E0202C379300429ECA /* Assets.xcassets in Resources */,
+				A6ABC4DE202C379300429ECA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC4E9202C379300429ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC4F4202C379400429ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6ABC4CF202C379300429ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ABC4DB202C379300429ECA /* ViewController.m in Sources */,
+				A6ABC4E6202C379300429ECA /* main.m in Sources */,
+				A6ABC4D8202C379300429ECA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC4E7202C379300429ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ABC4F0202C379300429ECA /* ________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ABC4F2202C379400429ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6ABC4FB202C379400429ECA /* ________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6ABC4ED202C379300429ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6ABC4D2202C379300429ECA /* 通过约束实现动画 */;
+			targetProxy = A6ABC4EC202C379300429ECA /* PBXContainerItemProxy */;
+		};
+		A6ABC4F8202C379400429ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6ABC4D2202C379300429ECA /* 通过约束实现动画 */;
+			targetProxy = A6ABC4F7202C379400429ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6ABC4DC202C379300429ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6ABC4DD202C379300429ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6ABC4E1202C379300429ECA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6ABC4E2202C379300429ECA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6ABC4FD202C379400429ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6ABC4FE202C379400429ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6ABC500202C379400429ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "通过约束实现动画/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6ABC501202C379400429ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "通过约束实现动画/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6ABC503202C379400429ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "通过约束实现动画Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/通过约束实现动画.app/通过约束实现动画";
+			};
+			name = Debug;
+		};
+		A6ABC504202C379400429ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "通过约束实现动画Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/通过约束实现动画.app/通过约束实现动画";
+			};
+			name = Release;
+		};
+		A6ABC506202C379400429ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "通过约束实现动画UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "通过约束实现动画";
+			};
+			name = Debug;
+		};
+		A6ABC507202C379400429ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "通过约束实现动画UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "通过约束实现动画";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6ABC4CE202C379300429ECA /* Build configuration list for PBXProject "通过约束实现动画" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6ABC4FD202C379400429ECA /* Debug */,
+				A6ABC4FE202C379400429ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6ABC4FF202C379400429ECA /* Build configuration list for PBXNativeTarget "通过约束实现动画" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6ABC500202C379400429ECA /* Debug */,
+				A6ABC501202C379400429ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6ABC502202C379400429ECA /* Build configuration list for PBXNativeTarget "通过约束实现动画Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6ABC503202C379400429ECA /* Debug */,
+				A6ABC504202C379400429ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6ABC505202C379400429ECA /* Build configuration list for PBXNativeTarget "通过约束实现动画UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6ABC506202C379400429ECA /* Debug */,
+				A6ABC507202C379400429ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6ABC4CB202C379300429ECA /* Project object */;
+}

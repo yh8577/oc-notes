@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>text</key>
+		<string>今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!今天,天气不错!</string>
+		<key>time</key>
+		<string>今天 17:00</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>还好,适合出去晒太阳!</string>
+		<key>time</key>
+		<string>今天 17:00</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+</array>
+</plist>

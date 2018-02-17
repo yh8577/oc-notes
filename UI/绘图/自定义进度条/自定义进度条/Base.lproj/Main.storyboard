@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TG-OR-6n8" customClass="QDView">
+                                <rect key="frame" x="37" y="120" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gs-fd-4WY">
+                                        <rect key="frame" x="131.5" y="139.5" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="5C8-kX-rmJ"/>
+                                    <constraint firstAttribute="width" constant="300" id="I6x-9r-Yus"/>
+                                    <constraint firstItem="2Gs-fd-4WY" firstAttribute="centerX" secondItem="3TG-OR-6n8" secondAttribute="centerX" id="bcu-Pr-6hA"/>
+                                    <constraint firstItem="2Gs-fd-4WY" firstAttribute="centerY" secondItem="3TG-OR-6n8" secondAttribute="centerY" id="fme-p4-OGw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="progressLbl" destination="2Gs-fd-4WY" id="MaA-yi-h5E"/>
+                                </connections>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="r4e-rL-NgR">
+                                <rect key="frame" x="35" y="440" width="304" height="31"/>
+                                <connections>
+                                    <action selector="progressChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="ygV-pJ-Ota"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3TG-OR-6n8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3jM-RM-fW8"/>
+                            <constraint firstItem="r4e-rL-NgR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K6h-av-kD8"/>
+                            <constraint firstItem="r4e-rL-NgR" firstAttribute="width" secondItem="3TG-OR-6n8" secondAttribute="width" id="eIh-Jj-pRL"/>
+                            <constraint firstItem="r4e-rL-NgR" firstAttribute="top" secondItem="3TG-OR-6n8" secondAttribute="bottom" constant="20" id="gwu-QC-qOV"/>
+                            <constraint firstItem="3TG-OR-6n8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="neh-bv-JQt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="qdView" destination="3TG-OR-6n8" id="STm-71-lPH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>

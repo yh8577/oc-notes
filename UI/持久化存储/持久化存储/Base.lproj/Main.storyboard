@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vu8-8X-i3i">
+                                <rect key="frame" x="100" y="50" width="46" height="30"/>
+                                <state key="normal" title="数组存"/>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SwC-Ev-jnG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kP-gj-4Ze">
+                                <rect key="frame" x="229" y="50" width="46" height="30"/>
+                                <state key="normal" title="数组取"/>
+                                <connections>
+                                    <action selector="read:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Cb-GI-MBv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxV-Tb-mX4">
+                                <rect key="frame" x="100" y="110" width="46" height="30"/>
+                                <state key="normal" title="字典存"/>
+                                <connections>
+                                    <action selector="dictSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VyP-6O-Bxy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swb-Zg-aQ2">
+                                <rect key="frame" x="229" y="110" width="46" height="30"/>
+                                <state key="normal" title="字典取"/>
+                                <connections>
+                                    <action selector="dictRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uaz-j6-AWr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRb-0G-i5W">
+                                <rect key="frame" x="100" y="170" width="46" height="30"/>
+                                <state key="normal" title="偏好存"/>
+                                <connections>
+                                    <action selector="defaultsSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qaV-Qe-W72"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wz-Aj-enN">
+                                <rect key="frame" x="229" y="170" width="46" height="30"/>
+                                <state key="normal" title="偏好取"/>
+                                <connections>
+                                    <action selector="defaultsRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXW-mG-gbB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzE-ab-oPm">
+                                <rect key="frame" x="100" y="230" width="46" height="30"/>
+                                <state key="normal" title="归档存"/>
+                                <connections>
+                                    <action selector="codingSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMf-N6-h9M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kth-mI-Mar">
+                                <rect key="frame" x="229" y="230" width="46" height="30"/>
+                                <state key="normal" title="归档取"/>
+                                <connections>
+                                    <action selector="codingRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OCP-v7-Pq4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vu8-8X-i3i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="0VP-bc-ZDk"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LzE-ab-oPm" secondAttribute="trailing" constant="20" symbolic="YES" id="36l-sY-OuY"/>
+                            <constraint firstItem="7kP-gj-4Ze" firstAttribute="leading" secondItem="Swb-Zg-aQ2" secondAttribute="leading" id="3Yj-h2-0eM"/>
+                            <constraint firstItem="LzE-ab-oPm" firstAttribute="top" secondItem="rRb-0G-i5W" secondAttribute="bottom" constant="30" id="3yj-ih-1CV"/>
+                            <constraint firstItem="7kP-gj-4Ze" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vu8-8X-i3i" secondAttribute="trailing" symbolic="YES" id="5aZ-xk-Q5O"/>
+                            <constraint firstItem="vu8-8X-i3i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="7AD-FB-HCU"/>
+                            <constraint firstItem="vu8-8X-i3i" firstAttribute="leading" secondItem="LxV-Tb-mX4" secondAttribute="leading" id="Cp3-vD-H82"/>
+                            <constraint firstItem="rRb-0G-i5W" firstAttribute="leading" secondItem="LzE-ab-oPm" secondAttribute="leading" id="IcE-Rk-hGn"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LxV-Tb-mX4" secondAttribute="trailing" constant="20" symbolic="YES" id="JaZ-0y-7dW"/>
+                            <constraint firstItem="Swb-Zg-aQ2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2Wz-Aj-enN" secondAttribute="leading" id="MID-rb-IRb"/>
+                            <constraint firstItem="LzE-ab-oPm" firstAttribute="baseline" secondItem="kth-mI-Mar" secondAttribute="baseline" id="Mom-bW-ROU"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Swb-Zg-aQ2" secondAttribute="trailing" id="Y4M-Dz-g7n"/>
+                            <constraint firstItem="2Wz-Aj-enN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kth-mI-Mar" secondAttribute="leading" id="Zwj-Zn-RKF"/>
+                            <constraint firstItem="rRb-0G-i5W" firstAttribute="baseline" secondItem="2Wz-Aj-enN" secondAttribute="baseline" id="g4F-Tb-FBo"/>
+                            <constraint firstItem="vu8-8X-i3i" firstAttribute="baseline" secondItem="7kP-gj-4Ze" secondAttribute="baseline" id="hCz-hj-t39"/>
+                            <constraint firstItem="LxV-Tb-mX4" firstAttribute="top" secondItem="vu8-8X-i3i" secondAttribute="bottom" constant="30" id="hNh-9Q-Si4"/>
+                            <constraint firstAttribute="trailing" secondItem="kth-mI-Mar" secondAttribute="trailing" constant="100" id="kyH-NS-utp"/>
+                            <constraint firstItem="rRb-0G-i5W" firstAttribute="top" secondItem="LxV-Tb-mX4" secondAttribute="bottom" constant="30" id="mH3-lO-iYL"/>
+                            <constraint firstAttribute="trailing" secondItem="7kP-gj-4Ze" secondAttribute="trailing" constant="100" id="mSQ-26-js2"/>
+                            <constraint firstItem="LxV-Tb-mX4" firstAttribute="leading" secondItem="rRb-0G-i5W" secondAttribute="leading" id="qZr-Ub-s8A"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rRb-0G-i5W" secondAttribute="trailing" constant="20" symbolic="YES" id="u1x-ae-Hpx"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Wz-Aj-enN" secondAttribute="trailing" id="vIL-QH-UvF"/>
+                            <constraint firstItem="LxV-Tb-mX4" firstAttribute="baseline" secondItem="Swb-Zg-aQ2" secondAttribute="baseline" id="x0r-Kp-AKD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

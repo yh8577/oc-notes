@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6A9D7EF20346AF6006559E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A9D7EE20346AF6006559E1 /* AppDelegate.m */; };
+		A6A9D7F220346AF6006559E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A9D7F120346AF6006559E1 /* ViewController.m */; };
+		A6A9D7F520346AF6006559E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A9D7F320346AF6006559E1 /* Main.storyboard */; };
+		A6A9D7F720346AF6006559E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A9D7F620346AF6006559E1 /* Assets.xcassets */; };
+		A6A9D7FA20346AF6006559E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A9D7F820346AF6006559E1 /* LaunchScreen.storyboard */; };
+		A6A9D7FD20346AF6006559E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A9D7FC20346AF6006559E1 /* main.m */; };
+		A6A9D80720346AF6006559E1 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A9D80620346AF6006559E1 /* ______Tests.m */; };
+		A6A9D81220346AF6006559E1 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A9D81120346AF6006559E1 /* ______UITests.m */; };
+		A6A9D82120346B30006559E1 /* QDView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A9D82020346B30006559E1 /* QDView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6A9D80320346AF6006559E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6A9D7E220346AF6006559E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6A9D7E920346AF6006559E1;
+			remoteInfo = "旋转缩放平移";
+		};
+		A6A9D80E20346AF6006559E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6A9D7E220346AF6006559E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6A9D7E920346AF6006559E1;
+			remoteInfo = "旋转缩放平移";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6A9D7EA20346AF6006559E1 /* 旋转缩放平移.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "旋转缩放平移.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A9D7ED20346AF6006559E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6A9D7EE20346AF6006559E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6A9D7F020346AF6006559E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A6A9D7F120346AF6006559E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A6A9D7F420346AF6006559E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6A9D7F620346AF6006559E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6A9D7F920346AF6006559E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6A9D7FB20346AF6006559E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A9D7FC20346AF6006559E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6A9D80220346AF6006559E1 /* 旋转缩放平移Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "旋转缩放平移Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A9D80620346AF6006559E1 /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		A6A9D80820346AF6006559E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A9D80D20346AF6006559E1 /* 旋转缩放平移UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "旋转缩放平移UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A9D81120346AF6006559E1 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
+		A6A9D81320346AF6006559E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A9D81F20346B30006559E1 /* QDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDView.h; sourceTree = "<group>"; };
+		A6A9D82020346B30006559E1 /* QDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6A9D7E720346AF6006559E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A9D7FF20346AF6006559E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A9D80A20346AF6006559E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6A9D7E120346AF6006559E1 = {
+			isa = PBXGroup;
+			children = (
+				A6A9D7EC20346AF6006559E1 /* 旋转缩放平移 */,
+				A6A9D80520346AF6006559E1 /* 旋转缩放平移Tests */,
+				A6A9D81020346AF6006559E1 /* 旋转缩放平移UITests */,
+				A6A9D7EB20346AF6006559E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6A9D7EB20346AF6006559E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9D7EA20346AF6006559E1 /* 旋转缩放平移.app */,
+				A6A9D80220346AF6006559E1 /* 旋转缩放平移Tests.xctest */,
+				A6A9D80D20346AF6006559E1 /* 旋转缩放平移UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6A9D7EC20346AF6006559E1 /* 旋转缩放平移 */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9D7ED20346AF6006559E1 /* AppDelegate.h */,
+				A6A9D7EE20346AF6006559E1 /* AppDelegate.m */,
+				A6A9D7F020346AF6006559E1 /* ViewController.h */,
+				A6A9D7F120346AF6006559E1 /* ViewController.m */,
+				A6A9D7F320346AF6006559E1 /* Main.storyboard */,
+				A6A9D81F20346B30006559E1 /* QDView.h */,
+				A6A9D82020346B30006559E1 /* QDView.m */,
+				A6A9D7F620346AF6006559E1 /* Assets.xcassets */,
+				A6A9D7F820346AF6006559E1 /* LaunchScreen.storyboard */,
+				A6A9D7FB20346AF6006559E1 /* Info.plist */,
+				A6A9D7FC20346AF6006559E1 /* main.m */,
+			);
+			path = "旋转缩放平移";
+			sourceTree = "<group>";
+		};
+		A6A9D80520346AF6006559E1 /* 旋转缩放平移Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9D80620346AF6006559E1 /* ______Tests.m */,
+				A6A9D80820346AF6006559E1 /* Info.plist */,
+			);
+			path = "旋转缩放平移Tests";
+			sourceTree = "<group>";
+		};
+		A6A9D81020346AF6006559E1 /* 旋转缩放平移UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9D81120346AF6006559E1 /* ______UITests.m */,
+				A6A9D81320346AF6006559E1 /* Info.plist */,
+			);
+			path = "旋转缩放平移UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6A9D7E920346AF6006559E1 /* 旋转缩放平移 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A9D81620346AF6006559E1 /* Build configuration list for PBXNativeTarget "旋转缩放平移" */;
+			buildPhases = (
+				A6A9D7E620346AF6006559E1 /* Sources */,
+				A6A9D7E720346AF6006559E1 /* Frameworks */,
+				A6A9D7E820346AF6006559E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "旋转缩放平移";
+			productName = "旋转缩放平移";
+			productReference = A6A9D7EA20346AF6006559E1 /* 旋转缩放平移.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6A9D80120346AF6006559E1 /* 旋转缩放平移Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A9D81920346AF6006559E1 /* Build configuration list for PBXNativeTarget "旋转缩放平移Tests" */;
+			buildPhases = (
+				A6A9D7FE20346AF6006559E1 /* Sources */,
+				A6A9D7FF20346AF6006559E1 /* Frameworks */,
+				A6A9D80020346AF6006559E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6A9D80420346AF6006559E1 /* PBXTargetDependency */,
+			);
+			name = "旋转缩放平移Tests";
+			productName = "旋转缩放平移Tests";
+			productReference = A6A9D80220346AF6006559E1 /* 旋转缩放平移Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6A9D80C20346AF6006559E1 /* 旋转缩放平移UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A9D81C20346AF6006559E1 /* Build configuration list for PBXNativeTarget "旋转缩放平移UITests" */;
+			buildPhases = (
+				A6A9D80920346AF6006559E1 /* Sources */,
+				A6A9D80A20346AF6006559E1 /* Frameworks */,
+				A6A9D80B20346AF6006559E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6A9D80F20346AF6006559E1 /* PBXTargetDependency */,
+			);
+			name = "旋转缩放平移UITests";
+			productName = "旋转缩放平移UITests";
+			productReference = A6A9D80D20346AF6006559E1 /* 旋转缩放平移UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6A9D7E220346AF6006559E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jyh;
+				TargetAttributes = {
+					A6A9D7E920346AF6006559E1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A6A9D80120346AF6006559E1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6A9D7E920346AF6006559E1;
+					};
+					A6A9D80C20346AF6006559E1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6A9D7E920346AF6006559E1;
+					};
+				};
+			};
+			buildConfigurationList = A6A9D7E520346AF6006559E1 /* Build configuration list for PBXProject "旋转缩放平移" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6A9D7E120346AF6006559E1;
+			productRefGroup = A6A9D7EB20346AF6006559E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6A9D7E920346AF6006559E1 /* 旋转缩放平移 */,
+				A6A9D80120346AF6006559E1 /* 旋转缩放平移Tests */,
+				A6A9D80C20346AF6006559E1 /* 旋转缩放平移UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6A9D7E820346AF6006559E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A9D7FA20346AF6006559E1 /* LaunchScreen.storyboard in Resources */,
+				A6A9D7F720346AF6006559E1 /* Assets.xcassets in Resources */,
+				A6A9D7F520346AF6006559E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A9D80020346AF6006559E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A9D80B20346AF6006559E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6A9D7E620346AF6006559E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A9D7F220346AF6006559E1 /* ViewController.m in Sources */,
+				A6A9D7FD20346AF6006559E1 /* main.m in Sources */,
+				A6A9D7EF20346AF6006559E1 /* AppDelegate.m in Sources */,
+				A6A9D82120346B30006559E1 /* QDView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A9D7FE20346AF6006559E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A9D80720346AF6006559E1 /* ______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A9D80920346AF6006559E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A9D81220346AF6006559E1 /* ______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6A9D80420346AF6006559E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6A9D7E920346AF6006559E1 /* 旋转缩放平移 */;
+			targetProxy = A6A9D80320346AF6006559E1 /* PBXContainerItemProxy */;
+		};
+		A6A9D80F20346AF6006559E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6A9D7E920346AF6006559E1 /* 旋转缩放平移 */;
+			targetProxy = A6A9D80E20346AF6006559E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6A9D7F320346AF6006559E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6A9D7F420346AF6006559E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6A9D7F820346AF6006559E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6A9D7F920346AF6006559E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6A9D81420346AF6006559E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6A9D81520346AF6006559E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6A9D81720346AF6006559E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "旋转缩放平移/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6A9D81820346AF6006559E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "旋转缩放平移/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6A9D81A20346AF6006559E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "旋转缩放平移Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/旋转缩放平移.app/旋转缩放平移";
+			};
+			name = Debug;
+		};
+		A6A9D81B20346AF6006559E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "旋转缩放平移Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/旋转缩放平移.app/旋转缩放平移";
+			};
+			name = Release;
+		};
+		A6A9D81D20346AF6006559E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "旋转缩放平移UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "旋转缩放平移";
+			};
+			name = Debug;
+		};
+		A6A9D81E20346AF6006559E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "旋转缩放平移UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "旋转缩放平移";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6A9D7E520346AF6006559E1 /* Build configuration list for PBXProject "旋转缩放平移" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A9D81420346AF6006559E1 /* Debug */,
+				A6A9D81520346AF6006559E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A9D81620346AF6006559E1 /* Build configuration list for PBXNativeTarget "旋转缩放平移" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A9D81720346AF6006559E1 /* Debug */,
+				A6A9D81820346AF6006559E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A9D81920346AF6006559E1 /* Build configuration list for PBXNativeTarget "旋转缩放平移Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A9D81A20346AF6006559E1 /* Debug */,
+				A6A9D81B20346AF6006559E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A9D81C20346AF6006559E1 /* Build configuration list for PBXNativeTarget "旋转缩放平移UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A9D81D20346AF6006559E1 /* Debug */,
+				A6A9D81E20346AF6006559E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6A9D7E220346AF6006559E1 /* Project object */;
+}

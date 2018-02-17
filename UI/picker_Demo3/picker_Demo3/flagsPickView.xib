@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eAf-v3-ARa" customClass="flagsPickView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V80-ff-j45">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="100"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRU-KX-Vhs">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="100"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="V80-ff-j45" firstAttribute="top" secondItem="eAf-v3-ARa" secondAttribute="top" id="06I-8w-PYj"/>
+                <constraint firstItem="b2u-Fu-RWf" firstAttribute="bottom" secondItem="eRU-KX-Vhs" secondAttribute="bottom" id="BXD-2k-86t"/>
+                <constraint firstItem="eRU-KX-Vhs" firstAttribute="top" secondItem="b2u-Fu-RWf" secondAttribute="top" id="MxJ-kc-Tfc"/>
+                <constraint firstItem="V80-ff-j45" firstAttribute="leading" secondItem="eRU-KX-Vhs" secondAttribute="trailing" id="SDM-Jm-SKL"/>
+                <constraint firstAttribute="bottom" secondItem="V80-ff-j45" secondAttribute="bottom" id="Srf-FN-DDO"/>
+                <constraint firstItem="V80-ff-j45" firstAttribute="width" secondItem="eRU-KX-Vhs" secondAttribute="width" id="Z1F-Yh-MdG"/>
+                <constraint firstItem="b2u-Fu-RWf" firstAttribute="trailing" secondItem="V80-ff-j45" secondAttribute="trailing" id="eBg-Ug-mkr"/>
+                <constraint firstItem="eRU-KX-Vhs" firstAttribute="leading" secondItem="b2u-Fu-RWf" secondAttribute="leading" id="fd4-wX-7bu"/>
+                <constraint firstItem="V80-ff-j45" firstAttribute="height" secondItem="eRU-KX-Vhs" secondAttribute="height" id="ijo-0y-1xl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="b2u-Fu-RWf"/>
+            <connections>
+                <outlet property="imageV" destination="V80-ff-j45" id="K3D-iP-hW5"/>
+                <outlet property="lblText" destination="eRU-KX-Vhs" id="fg2-Gl-KYr"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="-41"/>
+        </view>
+    </objects>
+</document>
