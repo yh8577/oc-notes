@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fmk-BW-tiZ" customClass="YHCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Vd-bg-wKO">
+                    <rect key="frame" x="25" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="hjH-M1-ZtZ"/>
+                        <constraint firstAttribute="height" constant="50" id="xLG-lJ-0Nx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqf-gC-0ZY">
+                    <rect key="frame" x="0.0" y="60" width="100" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.61727044900000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="ZWl-Mz-z4o" firstAttribute="trailing" secondItem="Cqf-gC-0ZY" secondAttribute="trailing" id="22q-bX-X8w"/>
+                <constraint firstItem="Cqf-gC-0ZY" firstAttribute="centerX" secondItem="fmk-BW-tiZ" secondAttribute="centerX" id="2cI-8D-ku9"/>
+                <constraint firstItem="Cqf-gC-0ZY" firstAttribute="leading" secondItem="ZWl-Mz-z4o" secondAttribute="leading" id="5LB-em-ryY"/>
+                <constraint firstItem="5Vd-bg-wKO" firstAttribute="top" secondItem="ZWl-Mz-z4o" secondAttribute="top" id="G5v-o6-pZt"/>
+                <constraint firstItem="Cqf-gC-0ZY" firstAttribute="top" secondItem="5Vd-bg-wKO" secondAttribute="bottom" constant="10" id="MRt-xx-Pl3"/>
+                <constraint firstItem="5Vd-bg-wKO" firstAttribute="centerX" secondItem="fmk-BW-tiZ" secondAttribute="centerX" id="jLx-I6-Xmq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ZWl-Mz-z4o"/>
+            <connections>
+                <outlet property="imageV" destination="5Vd-bg-wKO" id="SVi-iG-Hjl"/>
+                <outlet property="lbl" destination="Cqf-gC-0ZY" id="ENQ-BT-0g1"/>
+            </connections>
+            <point key="canvasLocation" x="5" y="-11"/>
+        </view>
+    </objects>
+</document>

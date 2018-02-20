@@ -52,6 +52,7 @@
 		A6C36D9B202B41D400105DF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C36D9A202B41D400105DF2 /* main.m */; };
 		A6C36DA1202B41E200105DF2 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C36DA0202B41E200105DF2 /* Dog.m */; };
 		A6C36DA4202B41FA00105DF2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C36DA3202B41FA00105DF2 /* Person.m */; };
+		A6EBC20C203C06EA005AFDDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EBC20B203C06EA005AFDDA /* main.m */; };
 		A6F93EAD2027FDD90024A63C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F93EAC2027FDD90024A63C /* main.m */; };
 		A6F93EB32027FE290024A63C /* NSNotificationSender.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F93EB22027FE290024A63C /* NSNotificationSender.m */; };
 		A6F93EB62027FE340024A63C /* NSNotificationListener.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F93EB52027FE340024A63C /* NSNotificationListener.m */; };
@@ -265,6 +266,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		A6EBC207203C06EA005AFDDA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		A6F93EA82027FDD90024A63C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +379,9 @@
 		A6C36DA0202B41E200105DF2 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		A6C36DA2202B41FA00105DF2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		A6C36DA3202B41FA00105DF2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A6EBC209203C06EA005AFDDA /* 获取 json数据 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "获取 json数据"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EBC20B203C06EA005AFDDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6EBC211203C076B005AFDDA /* more_project.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = more_project.json; sourceTree = "<group>"; };
 		A6F93EAA2027FDD90024A63C /* 通知 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "通知"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F93EAC2027FDD90024A63C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6F93EB12027FE290024A63C /* NSNotificationSender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSNotificationSender.h; sourceTree = "<group>"; };
@@ -533,6 +546,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A6C36D95202B41D400105DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EBC206203C06EA005AFDDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -728,6 +748,7 @@
 		A6C239DA20145C230011635F = {
 			isa = PBXGroup;
 			children = (
+				A6EBC211203C076B005AFDDA /* more_project.json */,
 				A6C239E520145C230011635F /* lx */,
 				A6C239F220145C4F0011635F /* 士兵 */,
 				A6C23A0F201468C10011635F /* 项目经理 */,
@@ -752,6 +773,7 @@
 				A6F93EAB2027FDD90024A63C /* 通知 */,
 				A6C36D99202B41D400105DF2 /* Kvc 常用方法 */,
 				A6A9D7DB2034680E006559E1 /* 抛异常 */,
+				A6EBC20A203C06EA005AFDDA /* 获取 json数据 */,
 				A6C239E420145C230011635F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -783,6 +805,7 @@
 				A6F93EAA2027FDD90024A63C /* 通知 */,
 				A6C36D98202B41D400105DF2 /* Kvc 常用方法 */,
 				A6A9D7DA2034680E006559E1 /* 抛异常 */,
+				A6EBC209203C06EA005AFDDA /* 获取 json数据 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -839,6 +862,14 @@
 				A6C36DA0202B41E200105DF2 /* Dog.m */,
 			);
 			path = "Kvc 常用方法";
+			sourceTree = "<group>";
+		};
+		A6EBC20A203C06EA005AFDDA /* 获取 json数据 */ = {
+			isa = PBXGroup;
+			children = (
+				A6EBC20B203C06EA005AFDDA /* main.m */,
+			);
+			path = "获取 json数据";
 			sourceTree = "<group>";
 		};
 		A6F93EAB2027FDD90024A63C /* 通知 */ = {
@@ -1247,6 +1278,23 @@
 			productReference = A6C36D98202B41D400105DF2 /* Kvc 常用方法 */;
 			productType = "com.apple.product-type.tool";
 		};
+		A6EBC208203C06EA005AFDDA /* 获取 json数据 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6EBC20F203C06EA005AFDDA /* Build configuration list for PBXNativeTarget "获取 json数据" */;
+			buildPhases = (
+				A6EBC205203C06EA005AFDDA /* Sources */,
+				A6EBC206203C06EA005AFDDA /* Frameworks */,
+				A6EBC207203C06EA005AFDDA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "获取 json数据";
+			productName = "获取 json数据";
+			productReference = A6EBC209203C06EA005AFDDA /* 获取 json数据 */;
+			productType = "com.apple.product-type.tool";
+		};
 		A6F93EA92027FDD90024A63C /* 通知 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6F93EB02027FDD90024A63C /* Build configuration list for PBXNativeTarget "通知" */;
@@ -1365,6 +1413,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					A6EBC208203C06EA005AFDDA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					A6F93EA92027FDD90024A63C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -1407,6 +1459,7 @@
 				A6F93EA92027FDD90024A63C /* 通知 */,
 				A6C36D97202B41D400105DF2 /* Kvc 常用方法 */,
 				A6A9D7D92034680E006559E1 /* 抛异常 */,
+				A6EBC208203C06EA005AFDDA /* 获取 json数据 */,
 			);
 		};
 /* End PBXProject section */
@@ -1615,6 +1668,14 @@
 				A6C36DA4202B41FA00105DF2 /* Person.m in Sources */,
 				A6C36DA1202B41E200105DF2 /* Dog.m in Sources */,
 				A6C36D9B202B41D400105DF2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EBC205203C06EA005AFDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EBC20C203C06EA005AFDDA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2336,6 +2397,28 @@
 			};
 			name = Release;
 		};
+		A6EBC20D203C06EA005AFDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6EBC20E203C06EA005AFDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A6F93EAE2027FDD90024A63C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2573,6 +2656,15 @@
 			buildConfigurations = (
 				A6C36D9C202B41D400105DF2 /* Debug */,
 				A6C36D9D202B41D400105DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6EBC20F203C06EA005AFDDA /* Build configuration list for PBXNativeTarget "获取 json数据" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6EBC20D203C06EA005AFDDA /* Debug */,
+				A6EBC20E203C06EA005AFDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
