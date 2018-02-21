@@ -1,0 +1,6 @@
+
+/* Class = "UITextField"; placeholder = "请输入用户名"; ObjectID = "AWy-T0-WSf"; */
+"AWy-T0-WSf.placeholder" = "qingshuru";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "ztz-Ol-Ytr"; */
+"ztz-Ol-Ytr.normalTitle" = "login";

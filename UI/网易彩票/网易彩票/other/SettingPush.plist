@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>icon</key>
+				<string>MoreAbout</string>
+				<key>title</key>
+				<string>第1</string>
+				<key>switchKey</key>
+				<string>settingPush01_00_00</string>
+				<key>accessoryView</key>
+				<string>UISwitch</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>plistName</key>
+				<string>SettingPush02</string>
+				<key>targetVC</key>
+				<string>YHLiveController</string>
+				<key>title</key>
+				<string>比分直播</string>
+				<key>accessoryContent</key>
+				<string>arrow_right</string>
+			</dict>
+			<dict>
+				<key>targetVC</key>
+				<string>YHSttingTableController</string>
+				<key>plistName</key>
+				<string>SettingPush03</string>
+				<key>title</key>
+				<string>中奖提醒</string>
+			</dict>
+			<dict>
+				<key>targetVC</key>
+				<string>YHSttingTableController</string>
+				<key>title</key>
+				<string>购彩提醒</string>
+				<key>plistName</key>
+				<string>SettingPush04</string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>MoreUpdate</string>
+				<key>title</key>
+				<string>更新</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

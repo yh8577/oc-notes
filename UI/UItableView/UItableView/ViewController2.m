@@ -75,8 +75,10 @@
     
     static NSString *cellID = @"cellID";
     
+    // 纯代码 使用
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-
+    // UIStoryboard 使用
+//    UITableViewCell *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:cellID];
     if (!cell) {
         NSLog(@"新建 -- 组号:%ld, 行号:%ld",indexPath.section,indexPath.row);
         cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:cellID];

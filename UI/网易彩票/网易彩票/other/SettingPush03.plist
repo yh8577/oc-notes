@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>footer</key>
+		<string>footer</string>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>推送提醒</string>
+				<key>accessoryView</key>
+				<string>UISwitch</string>
+				<key>switchKey</key>
+				<string>settingPush03_00_00</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
