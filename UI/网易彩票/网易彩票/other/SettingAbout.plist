@@ -12,6 +12,8 @@
 			<dict>
 				<key>title</key>
 				<string>评分支持</string>
+				<key>funcName</key>
+				<string>make</string>
 				<key>accessoryView</key>
 				<string>UIImageView</string>
 				<key>accessoryContent</key>
@@ -20,10 +22,26 @@
 			<dict>
 				<key>title</key>
 				<string>客服电话</string>
+				<key>funcName</key>
+				<string>makeCell</string>
 				<key>cellType</key>
 				<string>UITableViewCellStyleValue1</string>
 				<key>subTitle</key>
-				<string>subtitle</string>
+				<string>10010</string>
+				<key>accessoryView</key>
+				<string>UIImageView</string>
+				<key>accessoryContent</key>
+				<string>arrow_right</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>发短信</string>
+				<key>funcName</key>
+				<string>makeSms</string>
+				<key>cellType</key>
+				<string>UITableViewCellStyleValue1</string>
+				<key>subTitle</key>
+				<string>10010</string>
 				<key>accessoryView</key>
 				<string>UIImageView</string>
 				<key>accessoryContent</key>

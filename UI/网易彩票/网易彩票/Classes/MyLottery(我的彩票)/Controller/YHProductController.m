@@ -61,9 +61,16 @@ static NSString * const reuseIdentifier = @"produc_Cell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     YHProductModel *model = self.prodicts[indexPath.row];
+    UIApplication *app = [UIApplication sharedApplication];
     
-    NSLog(@"%@",model.title);
+    NSURL *appUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@://%@",model.customUrl,model.ID]];
+    NSURL *appStroeUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@",model.url]];
+    
+    if (![app openURL:appUrl]) {
+        [app openURL:appStroeUrl];
+    }
 }
+
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;

@@ -11,7 +11,11 @@
 #import "YHItemsMmodel.h"
 #import "YHRedViewController.h"
 #import "YHSettingCell.h"
-@interface YHSttingTableController ()
+
+#import <MessageUI/MessageUI.h>
+
+
+@interface YHSttingTableController ()<MFMessageComposeViewControllerDelegate>
 @property(nonatomic,strong)NSArray *groups;
 @end
 
@@ -79,6 +83,54 @@
     
     
 }
+
+// 跳转到应用程序
+- (void)makeApp {
+    NSLog(@"aaaaaaaaaaaaaaa");
+    UIApplication *app = [UIApplication sharedApplication];
+    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/cn/app/wei-xin/id414478124?mt=8"];
+    [app openURL:url];
+}
+
+// 跳转到应用商店
+- (void)make {
+    NSLog(@"aaaaaaaaaaaaaaa");
+    UIApplication *app = [UIApplication sharedApplication];
+    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/cn/app/wei-xin/id414478124?mt=8"];
+    [app openURL:url];
+}
+
+// 打电话
+- (void)makeCell {
+    UIApplication *app = [UIApplication sharedApplication];
+    NSURL *url = [NSURL URLWithString:@"tel://10010"];
+    [app openURL:url];
+}
+
+
+// 发短信
+- (void)makeSms {
+    // 方法1 // 会跳转到系统发短信页面
+//    UIApplication *app = [UIApplication sharedApplication];
+//    NSURL *url = [NSURL URLWithString:@"sms://10010"];
+//    [app openURL:url];
+    
+//    方法 2 // 直接在程序中打开短信功能
+    MFMessageComposeViewController *message = [[MFMessageComposeViewController alloc] init];
+    message.messageComposeDelegate = self;
+    message.body = @"你好";
+    message.recipients = [NSArray arrayWithObject:@"13119677766"];
+    
+    [self presentViewController:message animated:YES completion:nil];
+    
+}
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
+    
+    NSLog(@"短信回调");
+}
+
+
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     YHGroupModel *group = self.groups[section];

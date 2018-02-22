@@ -70,22 +70,5 @@
     return self.center.y;
 }
 
-//- (void)setSize:(CGSize)size {
-//    [self setWidth:size.width];
-//    [self setHeight:size.height];
-//}
-//
-//- (CGSize)size {
-//    return self.size;
-//}
-
-- (void)setOrigin:(CGPoint)origin {
-    [self setX:origin.x];
-    [self setY:origin.y];
-}
-
-- (CGPoint)origin {
-    return self.origin;
-}
 
 @end
