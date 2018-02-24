@@ -25,6 +25,32 @@ int main(int argc, const char * argv[]) {
         NSArray *arr = [NSArray arrayWithContentsOfFile:path];
         
         NSLog(@"%@",arr);
+        
+        NSString *strImage = @"http://pic.qiantucdn.com/58pic/13/19/30/68H58PICgNJ_1024.jpg";
+        NSString *cache = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+        
+        NSString *fileName = [strImage lastPathComponent];
+        
+        NSLog(@"%@", [cache stringByAppendingPathComponent:fileName]);
     }
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
