@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A64BA4AA20453B9C00699089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA4A920453B9C00699089 /* AppDelegate.m */; };
+		A64BA4AD20453B9C00699089 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA4AC20453B9C00699089 /* ViewController.m */; };
+		A64BA4B020453B9C00699089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64BA4AE20453B9C00699089 /* Main.storyboard */; };
+		A64BA4B220453B9C00699089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64BA4B120453B9C00699089 /* Assets.xcassets */; };
+		A64BA4B520453B9C00699089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64BA4B320453B9C00699089 /* LaunchScreen.storyboard */; };
+		A64BA4B820453B9C00699089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA4B720453B9C00699089 /* main.m */; };
+		A64BA4C220453B9C00699089 /* DOM______XMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA4C120453B9C00699089 /* DOM______XMLTests.m */; };
+		A64BA4CD20453B9C00699089 /* DOM______XMLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA4CC20453B9C00699089 /* DOM______XMLUITests.m */; };
+		A64BA4DD20453DEA00699089 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA4DC20453DEA00699089 /* GDataXMLNode.m */; };
+		A64BA4E22045458A00699089 /* Videos.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA4DF2045458900699089 /* Videos.m */; };
+		A64BA4E32045458A00699089 /* NSArray+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA4E02045458900699089 /* NSArray+Ex.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A64BA4BE20453B9C00699089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A64BA49D20453B9C00699089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A64BA4A420453B9C00699089;
+			remoteInfo = "DOM 加载解析 XML";
+		};
+		A64BA4C920453B9C00699089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A64BA49D20453B9C00699089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A64BA4A420453B9C00699089;
+			remoteInfo = "DOM 加载解析 XML";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A64BA4A520453B9C00699089 /* DOM 加载解析 XML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOM 加载解析 XML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64BA4A820453B9C00699089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A64BA4A920453B9C00699089 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A64BA4AB20453B9C00699089 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A64BA4AC20453B9C00699089 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A64BA4AF20453B9C00699089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A64BA4B120453B9C00699089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A64BA4B420453B9C00699089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A64BA4B620453B9C00699089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64BA4B720453B9C00699089 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A64BA4BD20453B9C00699089 /* DOM 加载解析 XMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DOM 加载解析 XMLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64BA4C120453B9C00699089 /* DOM______XMLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOM______XMLTests.m"; sourceTree = "<group>"; };
+		A64BA4C320453B9C00699089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64BA4C820453B9C00699089 /* DOM 加载解析 XMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DOM 加载解析 XMLUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64BA4CC20453B9C00699089 /* DOM______XMLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DOM______XMLUITests.m"; sourceTree = "<group>"; };
+		A64BA4CE20453B9C00699089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64BA4DB20453DEA00699089 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		A64BA4DC20453DEA00699089 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		A64BA4DE2045458900699089 /* Videos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Videos.h; sourceTree = "<group>"; };
+		A64BA4DF2045458900699089 /* Videos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Videos.m; sourceTree = "<group>"; };
+		A64BA4E02045458900699089 /* NSArray+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Ex.m"; sourceTree = "<group>"; };
+		A64BA4E12045458900699089 /* NSArray+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Ex.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A64BA4A220453B9C00699089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BA4BA20453B9C00699089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BA4C520453B9C00699089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A64BA49C20453B9C00699089 = {
+			isa = PBXGroup;
+			children = (
+				A64BA4A720453B9C00699089 /* DOM 加载解析 XML */,
+				A64BA4C020453B9C00699089 /* DOM 加载解析 XMLTests */,
+				A64BA4CB20453B9C00699089 /* DOM 加载解析 XMLUITests */,
+				A64BA4A620453B9C00699089 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A64BA4A620453B9C00699089 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A64BA4A520453B9C00699089 /* DOM 加载解析 XML.app */,
+				A64BA4BD20453B9C00699089 /* DOM 加载解析 XMLTests.xctest */,
+				A64BA4C820453B9C00699089 /* DOM 加载解析 XMLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A64BA4A720453B9C00699089 /* DOM 加载解析 XML */ = {
+			isa = PBXGroup;
+			children = (
+				A64BA4DA20453DEA00699089 /* Classes */,
+				A64BA4A820453B9C00699089 /* AppDelegate.h */,
+				A64BA4A920453B9C00699089 /* AppDelegate.m */,
+				A64BA4E12045458900699089 /* NSArray+Ex.h */,
+				A64BA4E02045458900699089 /* NSArray+Ex.m */,
+				A64BA4DE2045458900699089 /* Videos.h */,
+				A64BA4DF2045458900699089 /* Videos.m */,
+				A64BA4AB20453B9C00699089 /* ViewController.h */,
+				A64BA4AC20453B9C00699089 /* ViewController.m */,
+				A64BA4AE20453B9C00699089 /* Main.storyboard */,
+				A64BA4B120453B9C00699089 /* Assets.xcassets */,
+				A64BA4B320453B9C00699089 /* LaunchScreen.storyboard */,
+				A64BA4B620453B9C00699089 /* Info.plist */,
+				A64BA4B720453B9C00699089 /* main.m */,
+			);
+			path = "DOM 加载解析 XML";
+			sourceTree = "<group>";
+		};
+		A64BA4C020453B9C00699089 /* DOM 加载解析 XMLTests */ = {
+			isa = PBXGroup;
+			children = (
+				A64BA4C120453B9C00699089 /* DOM______XMLTests.m */,
+				A64BA4C320453B9C00699089 /* Info.plist */,
+			);
+			path = "DOM 加载解析 XMLTests";
+			sourceTree = "<group>";
+		};
+		A64BA4CB20453B9C00699089 /* DOM 加载解析 XMLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A64BA4CC20453B9C00699089 /* DOM______XMLUITests.m */,
+				A64BA4CE20453B9C00699089 /* Info.plist */,
+			);
+			path = "DOM 加载解析 XMLUITests";
+			sourceTree = "<group>";
+		};
+		A64BA4DA20453DEA00699089 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A64BA4DB20453DEA00699089 /* GDataXMLNode.h */,
+				A64BA4DC20453DEA00699089 /* GDataXMLNode.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A64BA4A420453B9C00699089 /* DOM 加载解析 XML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64BA4D120453B9C00699089 /* Build configuration list for PBXNativeTarget "DOM 加载解析 XML" */;
+			buildPhases = (
+				A64BA4A120453B9C00699089 /* Sources */,
+				A64BA4A220453B9C00699089 /* Frameworks */,
+				A64BA4A320453B9C00699089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DOM 加载解析 XML";
+			productName = "DOM 加载解析 XML";
+			productReference = A64BA4A520453B9C00699089 /* DOM 加载解析 XML.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A64BA4BC20453B9C00699089 /* DOM 加载解析 XMLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64BA4D420453B9C00699089 /* Build configuration list for PBXNativeTarget "DOM 加载解析 XMLTests" */;
+			buildPhases = (
+				A64BA4B920453B9C00699089 /* Sources */,
+				A64BA4BA20453B9C00699089 /* Frameworks */,
+				A64BA4BB20453B9C00699089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A64BA4BF20453B9C00699089 /* PBXTargetDependency */,
+			);
+			name = "DOM 加载解析 XMLTests";
+			productName = "DOM 加载解析 XMLTests";
+			productReference = A64BA4BD20453B9C00699089 /* DOM 加载解析 XMLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A64BA4C720453B9C00699089 /* DOM 加载解析 XMLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64BA4D720453B9C00699089 /* Build configuration list for PBXNativeTarget "DOM 加载解析 XMLUITests" */;
+			buildPhases = (
+				A64BA4C420453B9C00699089 /* Sources */,
+				A64BA4C520453B9C00699089 /* Frameworks */,
+				A64BA4C620453B9C00699089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A64BA4CA20453B9C00699089 /* PBXTargetDependency */,
+			);
+			name = "DOM 加载解析 XMLUITests";
+			productName = "DOM 加载解析 XMLUITests";
+			productReference = A64BA4C820453B9C00699089 /* DOM 加载解析 XMLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A64BA49D20453B9C00699089 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jyh;
+				TargetAttributes = {
+					A64BA4A420453B9C00699089 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A64BA4BC20453B9C00699089 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A64BA4A420453B9C00699089;
+					};
+					A64BA4C720453B9C00699089 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A64BA4A420453B9C00699089;
+					};
+				};
+			};
+			buildConfigurationList = A64BA4A020453B9C00699089 /* Build configuration list for PBXProject "DOM 加载解析 XML" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A64BA49C20453B9C00699089;
+			productRefGroup = A64BA4A620453B9C00699089 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A64BA4A420453B9C00699089 /* DOM 加载解析 XML */,
+				A64BA4BC20453B9C00699089 /* DOM 加载解析 XMLTests */,
+				A64BA4C720453B9C00699089 /* DOM 加载解析 XMLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A64BA4A320453B9C00699089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64BA4B520453B9C00699089 /* LaunchScreen.storyboard in Resources */,
+				A64BA4B220453B9C00699089 /* Assets.xcassets in Resources */,
+				A64BA4B020453B9C00699089 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BA4BB20453B9C00699089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BA4C620453B9C00699089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A64BA4A120453B9C00699089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64BA4AD20453B9C00699089 /* ViewController.m in Sources */,
+				A64BA4DD20453DEA00699089 /* GDataXMLNode.m in Sources */,
+				A64BA4E22045458A00699089 /* Videos.m in Sources */,
+				A64BA4E32045458A00699089 /* NSArray+Ex.m in Sources */,
+				A64BA4B820453B9C00699089 /* main.m in Sources */,
+				A64BA4AA20453B9C00699089 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BA4B920453B9C00699089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64BA4C220453B9C00699089 /* DOM______XMLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BA4C420453B9C00699089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64BA4CD20453B9C00699089 /* DOM______XMLUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A64BA4BF20453B9C00699089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A64BA4A420453B9C00699089 /* DOM 加载解析 XML */;
+			targetProxy = A64BA4BE20453B9C00699089 /* PBXContainerItemProxy */;
+		};
+		A64BA4CA20453B9C00699089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A64BA4A420453B9C00699089 /* DOM 加载解析 XML */;
+			targetProxy = A64BA4C920453B9C00699089 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A64BA4AE20453B9C00699089 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A64BA4AF20453B9C00699089 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A64BA4B320453B9C00699089 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A64BA4B420453B9C00699089 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A64BA4CF20453B9C00699089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A64BA4D020453B9C00699089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A64BA4D220453B9C00699089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "DOM 加载解析 XML/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.DOM------XML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A64BA4D320453B9C00699089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "DOM 加载解析 XML/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.DOM------XML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A64BA4D520453B9C00699089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DOM 加载解析 XMLTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.DOM------XMLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DOM 加载解析 XML.app/DOM 加载解析 XML";
+			};
+			name = Debug;
+		};
+		A64BA4D620453B9C00699089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DOM 加载解析 XMLTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.DOM------XMLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DOM 加载解析 XML.app/DOM 加载解析 XML";
+			};
+			name = Release;
+		};
+		A64BA4D820453B9C00699089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DOM 加载解析 XMLUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.DOM------XMLUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DOM 加载解析 XML";
+			};
+			name = Debug;
+		};
+		A64BA4D920453B9C00699089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DOM 加载解析 XMLUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huihui.aa.DOM------XMLUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DOM 加载解析 XML";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A64BA4A020453B9C00699089 /* Build configuration list for PBXProject "DOM 加载解析 XML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64BA4CF20453B9C00699089 /* Debug */,
+				A64BA4D020453B9C00699089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64BA4D120453B9C00699089 /* Build configuration list for PBXNativeTarget "DOM 加载解析 XML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64BA4D220453B9C00699089 /* Debug */,
+				A64BA4D320453B9C00699089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64BA4D420453B9C00699089 /* Build configuration list for PBXNativeTarget "DOM 加载解析 XMLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64BA4D520453B9C00699089 /* Debug */,
+				A64BA4D620453B9C00699089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64BA4D720453B9C00699089 /* Build configuration list for PBXNativeTarget "DOM 加载解析 XMLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64BA4D820453B9C00699089 /* Debug */,
+				A64BA4D920453B9C00699089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A64BA49D20453B9C00699089 /* Project object */;
+}
