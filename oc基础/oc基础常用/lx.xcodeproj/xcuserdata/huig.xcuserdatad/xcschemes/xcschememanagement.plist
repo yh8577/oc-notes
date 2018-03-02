@@ -7,52 +7,57 @@
 		<key>CGPoint.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>7</integer>
 		</dict>
 		<key>Copy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>17</integer>
 		</dict>
 		<key>Kvc 常用方法.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>22</integer>
 		</dict>
 		<key>NSArray.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>14</integer>
 		</dict>
 		<key>NSDate.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>6</integer>
 		</dict>
 		<key>NSDictionary.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>18</integer>
 		</dict>
 		<key>NSFileManager.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>15</integer>
 		</dict>
 		<key>NSNULL.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>23</integer>
 		</dict>
 		<key>NSRange.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
+		<key>NSString 截取字符串.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
 		<key>NSValue.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>8</integer>
 		</dict>
 		<key>Plist.xcscheme</key>
 		<dict>
@@ -67,7 +72,7 @@
 		<key>block练习.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>12</integer>
 		</dict>
 		<key>class.xcscheme</key>
 		<dict>
@@ -87,22 +92,22 @@
 		<key>代理协议.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>9</integer>
 		</dict>
 		<key>代理协议婴儿.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>13</integer>
 		</dict>
 		<key>保存读取沙盒中的plist.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>21</integer>
 		</dict>
 		<key>单例模式.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>19</integer>
 		</dict>
 		<key>士兵.xcscheme</key>
 		<dict>
@@ -117,7 +122,7 @@
 		<key>字符串处理NSString.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>10</integer>
 		</dict>
 		<key>字符串截取.xcscheme</key>
 		<dict>
@@ -127,7 +132,7 @@
 		<key>抛异常.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>24</integer>
 		</dict>
 		<key>监控文件夹删除有文件就删除.xcscheme</key>
 		<dict>
@@ -137,12 +142,12 @@
 		<key>获取 json数据.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>25</integer>
 		</dict>
 		<key>通知.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>20</integer>
 		</dict>
 		<key>项目经理.xcscheme</key>
 		<dict>

@@ -12,6 +12,7 @@
 		A627963320167EA000C51D89 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A627963220167EA000C51D89 /* Student.m */; };
 		A62BDF7F2020D77C00600E2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A62BDF7E2020D77C00600E2D /* main.m */; };
 		A64BA80C204845DC00699089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA80B204845DC00699089 /* main.m */; };
+		A64BA94D2049FAA200699089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA94C2049FAA200699089 /* main.m */; };
 		A6696296201DB7EC00D36B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6696295201DB7EC00D36B3C /* main.m */; };
 		A66962A1201DC60500D36B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A66962A0201DC60500D36B3C /* main.m */; };
 		A66962AC201DC8D100D36B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A66962AB201DC8D100D36B3C /* main.m */; };
@@ -79,6 +80,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		A64BA807204845DC00699089 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A64BA9482049FAA200699089 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -307,6 +317,8 @@
 		A62BDF7E2020D77C00600E2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A64BA809204845DC00699089 /* NSNULL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSNULL; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64BA80B204845DC00699089 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A64BA94A2049FAA200699089 /* NSString 截取字符串 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSString 截取字符串"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64BA94C2049FAA200699089 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6696293201DB7EC00D36B3C /* CGPoint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CGPoint; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6696295201DB7EC00D36B3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A669629E201DC60500D36B3C /* NSValue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSValue; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -418,6 +430,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A64BA806204845DC00699089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BA9472049FAA200699089 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -616,6 +635,14 @@
 			path = NSNULL;
 			sourceTree = "<group>";
 		};
+		A64BA94B2049FAA200699089 /* NSString 截取字符串 */ = {
+			isa = PBXGroup;
+			children = (
+				A64BA94C2049FAA200699089 /* main.m */,
+			);
+			path = "NSString 截取字符串";
+			sourceTree = "<group>";
+		};
 		A6696294201DB7EC00D36B3C /* CGPoint */ = {
 			isa = PBXGroup;
 			children = (
@@ -802,6 +829,7 @@
 				A6A9D7DB2034680E006559E1 /* 抛异常 */,
 				A6EBC20A203C06EA005AFDDA /* 获取 json数据 */,
 				A64BA80A204845DC00699089 /* NSNULL */,
+				A64BA94B2049FAA200699089 /* NSString 截取字符串 */,
 				A6C239E420145C230011635F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -835,6 +863,7 @@
 				A6A9D7DA2034680E006559E1 /* 抛异常 */,
 				A6EBC209203C06EA005AFDDA /* 获取 json数据 */,
 				A64BA809204845DC00699089 /* NSNULL */,
+				A64BA94A2049FAA200699089 /* NSString 截取字符串 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -965,6 +994,23 @@
 			name = NSNULL;
 			productName = NSNULL;
 			productReference = A64BA809204845DC00699089 /* NSNULL */;
+			productType = "com.apple.product-type.tool";
+		};
+		A64BA9492049FAA200699089 /* NSString 截取字符串 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64BA9502049FAA200699089 /* Build configuration list for PBXNativeTarget "NSString 截取字符串" */;
+			buildPhases = (
+				A64BA9462049FAA200699089 /* Sources */,
+				A64BA9472049FAA200699089 /* Frameworks */,
+				A64BA9482049FAA200699089 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSString 截取字符串";
+			productName = "NSString 截取字符串";
+			productReference = A64BA94A2049FAA200699089 /* NSString 截取字符串 */;
 			productType = "com.apple.product-type.tool";
 		};
 		A6696292201DB7EC00D36B3C /* CGPoint */ = {
@@ -1379,6 +1425,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					A64BA9492049FAA200699089 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					A6696292201DB7EC00D36B3C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -1511,6 +1561,7 @@
 				A6A9D7D92034680E006559E1 /* 抛异常 */,
 				A6EBC208203C06EA005AFDDA /* 获取 json数据 */,
 				A64BA808204845DC00699089 /* NSNULL */,
+				A64BA9492049FAA200699089 /* NSString 截取字符串 */,
 			);
 		};
 /* End PBXProject section */
@@ -1539,6 +1590,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A64BA80C204845DC00699089 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BA9462049FAA200699089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A64BA94D2049FAA200699089 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1799,6 +1858,28 @@
 			name = Debug;
 		};
 		A64BA80E204845DC00699089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A64BA94E2049FAA200699089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A64BA94F2049FAA200699089 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2548,6 +2629,15 @@
 			buildConfigurations = (
 				A64BA80D204845DC00699089 /* Debug */,
 				A64BA80E204845DC00699089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64BA9502049FAA200699089 /* Build configuration list for PBXNativeTarget "NSString 截取字符串" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A64BA94E2049FAA200699089 /* Debug */,
+				A64BA94F2049FAA200699089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
