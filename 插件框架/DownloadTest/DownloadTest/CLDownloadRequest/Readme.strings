@@ -1,0 +1,24 @@
+/* 
+  Readme.strings
+  DownloadTest
+
+  Created by chuliangliang on 16/6/30.
+  Copyright © 2016年 chuliangliang. All rights reserved.
+*/
+
+/**
+ * 本程序只做技术交流使用,请勿商用谢谢
+ *
+ * 版本: V1.0
+ * 实用技术: 基于iOS最新的网络请NSURLSession 封装下载框架
+ * 目前功能:
+ *          (1)多线程下载,可自定义并发数
+ *          (2)支持断点续传
+ *          (3)支持取消下载任务
+ *          (4)支持暂停下载后app重新启动可继续下载
+ *          (5)支持状态栏网络状态菊花指示
+ * 反馈及联系方式:
+ *          QQ:949977202
+ *          Email : chuliangliang300@sina.com
+ * 更多资源 : http://blog.csdn.net/u011205774 (本博客 收录了一些cocos2dx 简单介绍 和使用实例)
+ **/

@@ -8,22 +8,26 @@
 
 #import <Foundation/Foundation.h>
 @class YHDownloader;
-@protocol YHDownloaderDelgate <NSObject>
 
-- (void)YHDownloader:(YHDownloader *)YHDownloader progress:(float)progress;
-
-@end
 
 @interface YHDownloader : NSObject
-/** 下载进度progress */
-@property (nonatomic, weak) id<YHDownloaderDelgate> delegate;
 
 + (instancetype)sharedDownloader;
-
-// 开始下载
-- (void)startDownload:(NSString *)urlStr;
-// 取消下载
-- (void)cancelDownload;
-// 暂停下载
+/**
+ 开始下载
+ @param urlStr 下载地址
+ @param successBlock 完成
+ @param progressBlock 进度
+ @param errorBlock 错误
+ */
+- (void)startDownload:(NSString *)urlStr successBlock:(void(^)(BOOL isSuccess))successBlock progressBlock:(void(^)(float progress))progressBlock errorBlock:(void(^)(NSError *error))errorBlock;
+/**
+  暂停下载
+ */
 - (void)suspendDownload;
+
+/**
+ 删除
+ */
+- (void)removeFileForKey:(NSString *)urlStr;
 @end

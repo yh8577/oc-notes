@@ -18,73 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Acq-Uw-rOP">
-                                <rect key="frame" x="112.5" y="220" width="150" height="2"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="E42-nk-BrL"/>
-                                    <constraint firstAttribute="height" constant="2" id="cpv-jl-qPU"/>
-                                </constraints>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbW-PD-MGe">
-                                <rect key="frame" x="175" y="179" width="24" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b0x-wh-g6R">
-                                <rect key="frame" x="83" y="308" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdK-wa-PBr">
-                                <rect key="frame" x="0.0" y="40" width="125" height="30"/>
+                                <rect key="frame" x="0.0" y="437" width="125" height="30"/>
                                 <state key="normal" title="开始"/>
                                 <connections>
                                     <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sDd-FG-PwV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWJ-Wn-yuB">
-                                <rect key="frame" x="125" y="40" width="125" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gz-Fw-8Ss">
+                                <rect key="frame" x="125" y="437" width="125" height="30"/>
                                 <state key="normal" title="暂停"/>
                                 <connections>
-                                    <action selector="suspended:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4C1-qz-4wq"/>
+                                    <action selector="cancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6a-GJ-nR6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gz-Fw-8Ss">
-                                <rect key="frame" x="250" y="40" width="125" height="30"/>
-                                <state key="normal" title="取消"/>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6d-bJ-dlf" customClass="YHProgressView">
+                                <rect key="frame" x="112" y="170" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Noe-fK-uWh"/>
+                                    <constraint firstAttribute="width" constant="150" id="itJ-kB-wND"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbj-co-Dbi">
+                                <rect key="frame" x="250" y="437" width="125" height="30"/>
+                                <state key="normal" title="删除"/>
                                 <connections>
-                                    <action selector="cancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6a-GJ-nR6"/>
+                                    <action selector="delete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PI9-KI-swn"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="1Gz-Fw-8Ss" firstAttribute="width" secondItem="HdK-wa-PBr" secondAttribute="width" id="4Ij-Bq-uCr"/>
                             <constraint firstItem="1Gz-Fw-8Ss" firstAttribute="width" secondItem="HdK-wa-PBr" secondAttribute="width" id="8ig-Th-2lu"/>
                             <constraint firstItem="HdK-wa-PBr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9WE-yz-d5e"/>
-                            <constraint firstItem="Acq-Uw-rOP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="EWW-Fn-8U1"/>
-                            <constraint firstItem="1Gz-Fw-8Ss" firstAttribute="leading" secondItem="JWJ-Wn-yuB" secondAttribute="trailing" id="FKr-uq-vBP"/>
-                            <constraint firstItem="HdK-wa-PBr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OxF-jO-eM7"/>
-                            <constraint firstItem="JWJ-Wn-yuB" firstAttribute="height" secondItem="HdK-wa-PBr" secondAttribute="height" id="POD-Rc-PdD"/>
-                            <constraint firstItem="GbW-PD-MGe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UW1-QP-nW9"/>
-                            <constraint firstItem="JWJ-Wn-yuB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Xzo-rQ-Rbl"/>
-                            <constraint firstItem="Acq-Uw-rOP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c3v-aG-gWL"/>
-                            <constraint firstItem="JWJ-Wn-yuB" firstAttribute="width" secondItem="HdK-wa-PBr" secondAttribute="width" id="fHO-d4-SaE"/>
-                            <constraint firstItem="JWJ-Wn-yuB" firstAttribute="leading" secondItem="HdK-wa-PBr" secondAttribute="trailing" id="h6f-uB-gzr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Gz-Fw-8Ss" secondAttribute="trailing" id="lgg-bn-A83"/>
-                            <constraint firstItem="Acq-Uw-rOP" firstAttribute="top" secondItem="GbW-PD-MGe" secondAttribute="bottom" constant="20" id="ojg-fE-Hfz"/>
-                            <constraint firstItem="1Gz-Fw-8Ss" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="twu-Zl-VxC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gbj-co-Dbi" secondAttribute="trailing" id="AVa-1k-2EO"/>
+                            <constraint firstItem="Gbj-co-Dbi" firstAttribute="width" secondItem="HdK-wa-PBr" secondAttribute="width" id="MAk-sQ-7iu"/>
+                            <constraint firstItem="Gbj-co-Dbi" firstAttribute="height" secondItem="HdK-wa-PBr" secondAttribute="height" id="War-s1-4Yf"/>
+                            <constraint firstItem="x6d-bJ-dlf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WpI-m5-uza"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HdK-wa-PBr" secondAttribute="bottom" constant="200" id="XUc-1Y-uOy"/>
+                            <constraint firstItem="1Gz-Fw-8Ss" firstAttribute="leading" secondItem="HdK-wa-PBr" secondAttribute="trailing" id="c2a-Kv-tIv"/>
+                            <constraint firstItem="1Gz-Fw-8Ss" firstAttribute="height" secondItem="HdK-wa-PBr" secondAttribute="height" id="fvK-1e-Uv8"/>
+                            <constraint firstItem="1Gz-Fw-8Ss" firstAttribute="centerY" secondItem="HdK-wa-PBr" secondAttribute="centerY" id="mW1-D7-u7q"/>
+                            <constraint firstItem="x6d-bJ-dlf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="pSj-sG-fcD"/>
+                            <constraint firstItem="Gbj-co-Dbi" firstAttribute="leading" secondItem="1Gz-Fw-8Ss" secondAttribute="trailing" id="tXc-qy-vra"/>
+                            <constraint firstItem="Gbj-co-Dbi" firstAttribute="centerY" secondItem="1Gz-Fw-8Ss" secondAttribute="centerY" id="w8f-cM-TTB"/>
                             <constraint firstItem="1Gz-Fw-8Ss" firstAttribute="height" secondItem="HdK-wa-PBr" secondAttribute="height" id="wyc-iF-r3i"/>
-                            <constraint firstItem="JWJ-Wn-yuB" firstAttribute="leading" secondItem="HdK-wa-PBr" secondAttribute="trailing" id="xDX-0a-XCQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="progressLabel" destination="GbW-PD-MGe" id="3aL-ha-azE"/>
-                        <outlet property="progressView" destination="Acq-Uw-rOP" id="Rny-oC-bOb"/>
+                        <outlet property="progressView" destination="x6d-bJ-dlf" id="5Hi-Cx-WNs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

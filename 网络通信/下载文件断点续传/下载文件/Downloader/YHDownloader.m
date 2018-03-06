@@ -46,6 +46,12 @@
  */
 @property (nonatomic, strong) NSString *urlStr;
 
+/**
+ 回调 Block
+ */
+@property (nonatomic, copy) void (^successBlock) (BOOL isSuccess);
+@property (nonatomic, copy) void (^progressBlock) (float progress);
+@property (nonatomic, copy) void (^errorBlock) (NSError *error);
 @end
 
 @implementation YHDownloader
@@ -71,7 +77,9 @@
  */
 - (NSURLSession *)session {
     if (!_session) {
-        _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+//        _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+        NSString *identifier = [[NSBundle mainBundle] bundleIdentifier];
+        _session = [NSURLSession sessionWithConfiguration: [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:identifier] delegate:self  delegateQueue:[NSOperationQueue mainQueue]];
     }
     return _session;
 }
@@ -84,12 +92,12 @@
 - (NSURLSessionDataTask *)dataTask {
 
     if (!_dataTask) {
+        NSLog(@"%@",[NSThread currentThread]);
         NSURL *url = [NSURL URLWithString:self.urlStr];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         //3 设置请求头信息,告诉服务器请求那一部分数据
         self.currentSize = [self getFileSize];
-        NSString *range = [NSString stringWithFormat:@"bytes=%zd-",self.currentSize];
-        [request setValue:range forHTTPHeaderField:@"Range"];
+        [request setValue:[NSString stringWithFormat:@"bytes=%zd-",self.currentSize] forHTTPHeaderField:@"Range"];
         //4.创建Task
         _dataTask = [self.session dataTaskWithRequest:request];
     }
@@ -126,35 +134,40 @@
 
  @param urlStr 下载地址
  */
-- (void)startDownload:(NSString *)urlStr {
-    if (!self.isSuspend) {
-        self.isSuspend = YES;
-        NSLog(@"开始");
-        self.urlStr = urlStr;
-        [self.dataTask resume];
-    }
+- (void)startDownload:(NSString *)urlStr successBlock:(void(^)(BOOL isSuccess))successBlock progressBlock:(void(^)(float progress))progressBlock errorBlock:(void(^)(NSError *error))errorBlock {
+    
+    self.successBlock = successBlock;
+    self.progressBlock = progressBlock;
+    self.errorBlock = errorBlock;
+    NSLog(@"开始");
+    self.urlStr = urlStr;
+
+    [self.dataTask resume];
 }
 
 /**
- 暂停下载
+取消下载
  */
 - (void)suspendDownload {
-    if (self.isSuspend) {
-        NSLog(@"暂停");
-        self.isSuspend = NO;
-        [self.dataTask suspend];
-    }
-}
 
-/**
- 继续下载
- */
-- (void)cancelDownload {
-
-    NSLog(@"取消");
+    NSLog(@"暂停");
+    // 这里暂停不了,因为是断点续传用取消其实一样效果.
+//    [self.dataTask suspend];
+    // 只能用取消
     [self.dataTask cancel];
     self.dataTask = nil;
 }
+
+/**
+ 删除
+ */
+- (void)removeFileForKey:(NSString *)urlStr {
+    [self suspendDownload];
+    NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:[urlStr lastPathComponent]];
+    [[NSFileManager defaultManager] removeItemAtPath:fullPath error:nil];
+
+}
+
 
 #pragma mark NSURLSessionDataDelegate
 
@@ -167,10 +180,20 @@
  *  @param completionHandler 回调 传给系统
  */
 - (void)URLSession:(NSURLSession *)session dataTask:(nonnull NSURLSessionDataTask *)dataTask didReceiveResponse:(nonnull NSURLResponse *)response completionHandler:(nonnull void (^)(NSURLSessionResponseDisposition))completionHandler {
+    
     //获得文件的总大小
     //expectedContentLength 本次请求的数据大小
     self.totalSize = response.expectedContentLength + self.currentSize;
-
+    
+    if (response.expectedContentLength == -1) {
+        if (self.successBlock) {
+            self.successBlock(YES);
+            float progress = 1.0 * self.currentSize / self.totalSize;
+            self.progressBlock(progress);
+        }
+        return;
+    }
+    
     if (self.currentSize == 0) {
         //创建空的文件
         [[NSFileManager defaultManager]createFileAtPath:self.fullPath contents:nil attributes:nil];
@@ -189,7 +212,6 @@
     completionHandler(NSURLSessionResponseAllow);
 }
 
-
 /**
  *  接收到服务器返回的数据 调用多次
  *
@@ -204,8 +226,11 @@
     //计算文件的下载进度
     self.currentSize += data.length;
     float progress = 1.0 * self.currentSize / self.totalSize;
-    if ([self.delegate respondsToSelector:@selector(YHDownloader:progress:)]) {
-        [self.delegate YHDownloader:self progress:progress];
+
+    if (self.progressBlock) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.progressBlock(progress);
+        });
     }
 }
 
@@ -218,18 +243,26 @@
  */
 
 - (void)URLSession:(NSURLSession *)session task:(nonnull NSURLSessionTask *)task didCompleteWithError:(nullable NSError *)error {
-    NSLog(@"------%@",self.fullPath);
+//    NSLog(@"------%@",self.fullPath);
     //关闭文件句柄
     [self.handle closeFile];
     self.handle = nil;
+
+    if (!error) {
+        if (self.successBlock) {
+            self.successBlock(YES);
+        }
+    } else {
+        if (self.errorBlock) {
+            self.errorBlock(error);
+        }
+    }
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     //清理工作
     //finishTasksAndInvalidate
     [self.session invalidateAndCancel];
 }
-
 
 @end

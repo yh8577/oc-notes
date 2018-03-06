@@ -33,7 +33,6 @@
             return;
         }
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            
             self.finshedBlock(img);
         }];
     }

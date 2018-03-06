@@ -16,6 +16,8 @@
 		A64BA8A420484AE100699089 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA8A320484AE100699089 /* ____Tests.m */; };
 		A64BA8AF20484AE100699089 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA8AE20484AE100699089 /* ____UITests.m */; };
 		A64BA8BF20484B2900699089 /* YHDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A64BA8BE20484B2900699089 /* YHDownloader.m */; };
+		A6AB943F204AB6340012FFBB /* YHProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AB943E204AB6340012FFBB /* YHProgressView.m */; };
+		A6AB9442204B98590012FFBB /* YHDownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AB9441204B98590012FFBB /* YHDownloaderManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		A64BA8B020484AE100699089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A64BA8BD20484B2900699089 /* YHDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDownloader.h; sourceTree = "<group>"; };
 		A64BA8BE20484B2900699089 /* YHDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDownloader.m; sourceTree = "<group>"; };
+		A6AB943D204AB6340012FFBB /* YHProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHProgressView.h; sourceTree = "<group>"; };
+		A6AB943E204AB6340012FFBB /* YHProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHProgressView.m; sourceTree = "<group>"; };
+		A6AB9440204B98590012FFBB /* YHDownloaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDownloaderManager.h; sourceTree = "<group>"; };
+		A6AB9441204B98590012FFBB /* YHDownloaderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDownloaderManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +145,12 @@
 		A64BA8BC20484AF500699089 /* Downloader */ = {
 			isa = PBXGroup;
 			children = (
+				A6AB943D204AB6340012FFBB /* YHProgressView.h */,
+				A6AB943E204AB6340012FFBB /* YHProgressView.m */,
 				A64BA8BD20484B2900699089 /* YHDownloader.h */,
 				A64BA8BE20484B2900699089 /* YHDownloader.m */,
+				A6AB9440204B98590012FFBB /* YHDownloaderManager.h */,
+				A6AB9441204B98590012FFBB /* YHDownloaderManager.m */,
 			);
 			path = Downloader;
 			sourceTree = "<group>";
@@ -280,8 +290,10 @@
 			files = (
 				A64BA88F20484AE100699089 /* ViewController.m in Sources */,
 				A64BA8BF20484B2900699089 /* YHDownloader.m in Sources */,
+				A6AB943F204AB6340012FFBB /* YHProgressView.m in Sources */,
 				A64BA89A20484AE100699089 /* main.m in Sources */,
 				A64BA88C20484AE100699089 /* AppDelegate.m in Sources */,
+				A6AB9442204B98590012FFBB /* YHDownloaderManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
