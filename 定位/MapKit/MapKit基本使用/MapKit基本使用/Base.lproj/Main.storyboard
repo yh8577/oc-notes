@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Uq0-Gp-l2t">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bj1-UP-dbb">
+                                <rect key="frame" x="20" y="70" width="335" height="29"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapTypeChangeClick:" destination="BYZ-38-t0r" eventType="valueChanged" id="1xh-6f-UfK"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wb8-6y-8HC">
+                                <rect key="frame" x="20" y="617" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E2W-hR-Pd9"/>
+                                    <constraint firstAttribute="width" constant="30" id="nWA-Mq-dqu"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="btn_map_locate_hl"/>
+                                <state key="highlighted" backgroundImage="btn_map_locate_hl_Highlighted"/>
+                                <connections>
+                                    <action selector="backUserLocationClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8DM-ie-rQd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niW-sb-leM">
+                                <rect key="frame" x="315" y="583" width="50" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="放大地图"/>
+                                <connections>
+                                    <action selector="zoomInClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfb-48-eH5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbP-Nt-rbM">
+                                <rect key="frame" x="315" y="620" width="50" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="缩小地图"/>
+                                <connections>
+                                    <action selector="zoomOutClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3vF-ne-Jx7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zbP-Nt-rbM" firstAttribute="bottom" secondItem="wb8-6y-8HC" secondAttribute="bottom" id="0wK-Mi-9xB"/>
+                            <constraint firstItem="Uq0-Gp-l2t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5hj-m0-t0e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wb8-6y-8HC" secondAttribute="bottom" constant="20" id="67b-H3-q1y"/>
+                            <constraint firstItem="bj1-UP-dbb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A8r-lV-vnN"/>
+                            <constraint firstItem="niW-sb-leM" firstAttribute="trailing" secondItem="zbP-Nt-rbM" secondAttribute="trailing" id="BXd-jB-s3t"/>
+                            <constraint firstAttribute="trailing" secondItem="Uq0-Gp-l2t" secondAttribute="trailing" id="KDh-0j-aZC"/>
+                            <constraint firstItem="niW-sb-leM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="MGf-2d-aUM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uq0-Gp-l2t" secondAttribute="bottom" id="acI-NB-aqb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zbP-Nt-rbM" secondAttribute="trailing" constant="10" id="dFP-ij-O3x"/>
+                            <constraint firstItem="wb8-6y-8HC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eXE-x0-gKk"/>
+                            <constraint firstItem="bj1-UP-dbb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="gKd-Ac-fbV"/>
+                            <constraint firstItem="Uq0-Gp-l2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kiM-Jb-8mg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bj1-UP-dbb" secondAttribute="trailing" constant="20" id="lS3-dX-UjJ"/>
+                            <constraint firstItem="zbP-Nt-rbM" firstAttribute="top" secondItem="niW-sb-leM" secondAttribute="bottom" constant="10" id="o6O-kd-pBW"/>
+                            <constraint firstItem="zbP-Nt-rbM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="yXT-jS-eDn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Uq0-Gp-l2t" id="xr7-Qs-q97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301.60000000000002" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_map_locate_hl" width="59" height="59"/>
+        <image name="btn_map_locate_hl_Highlighted" width="59" height="59"/>
+    </resources>
+</document>
