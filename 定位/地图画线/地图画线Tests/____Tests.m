@@ -1,18 +1,12 @@
-//
-//  Geocoder_______Tests.m
-//  Geocoder-正反地理编码Tests
-//
-//  Created by jyh on 2018/3/8.
-//  Copyright © 2018年 jyh. All rights reserved.
-//
+//___FILEHEADER___
 
 #import <XCTest/XCTest.h>
 
-@interface Geocoder_______Tests : XCTestCase
+@interface ___FILEBASENAMEASIDENTIFIER___ : XCTestCase
 
 @end
 
-@implementation Geocoder_______Tests
+@implementation ___FILEBASENAMEASIDENTIFIER___
 
 - (void)setUp {
     [super setUp];
