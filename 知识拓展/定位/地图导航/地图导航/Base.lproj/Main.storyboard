@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qQt-2z-03H">
+                                <rect key="frame" x="103" y="161" width="168" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="d4C-Uc-IGp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwi-tz-ehD">
+                                <rect key="frame" x="156.5" y="221" width="62" height="30"/>
+                                <state key="normal" title="开始导航"/>
+                                <connections>
+                                    <action selector="startNvigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mmy-Vv-VRe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入目的地" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8i-BA-TMl">
+                                <rect key="frame" x="135.5" y="120" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qQt-2z-03H" firstAttribute="top" secondItem="h8i-BA-TMl" secondAttribute="bottom" constant="20" id="6dv-m5-VJ4"/>
+                            <constraint firstItem="h8i-BA-TMl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="AHF-lS-enu"/>
+                            <constraint firstItem="qQt-2z-03H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Som-b0-0qO"/>
+                            <constraint firstItem="vwi-tz-ehD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WS9-wR-1Fp"/>
+                            <constraint firstItem="vwi-tz-ehD" firstAttribute="top" secondItem="qQt-2z-03H" secondAttribute="bottom" constant="30" id="YVy-O7-Q8m"/>
+                            <constraint firstItem="h8i-BA-TMl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rx0-VG-suk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="destinationTF" destination="qQt-2z-03H" id="dk4-DU-QyE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
