@@ -23,7 +23,7 @@
 //    [YHDownloader sharedDownloader].delegate = self;
 //    @"http://127.0.0.1/031-34987-A.dmg"
 //    @"http://120.25.226.186:32812/resources/videos/minion_02.mp4"
-    [[YHDownloaderManager sharedManager] startDownload:@"http://127.0.0.1/031-34987-A.dmg" successBlock:^(BOOL isSuccess) {
+    [[YHDownloaderManager sharedManager] startDownload:@"http://120.25.226.186:32812/resources/videos/minion_02.mp4" successBlock:^(BOOL isSuccess) {
         NSLog(@"下载完成");
     } progressBlock:^(float progress) {
         self.progressView.progress = progress;
