@@ -12,22 +12,22 @@
 #import "XMPPLogging.H"
 
 
-@interface YHManagerStream ()<XMPPStreamDelegate>
+@interface YHManagerStream ()<XMPPStreamDelegate,XMPPRosterDelegate>
 
 @end
 
 @implementation YHManagerStream
 
-static YHManagerStream *instance;
-+ (instancetype)sharedManager {
+static YHManagerStream *sharedInstance;
++ (instancetype)sharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [YHManagerStream new];
+        sharedInstance = [YHManagerStream new];
         
         // 设置打印日志
         [DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:XMPP_LOG_FLAG_SEND_RECV];
     });
-    return instance;
+    return sharedInstance;
 }
 
 - (XMPPStream *)xmppStream {
@@ -46,36 +46,130 @@ static YHManagerStream *instance;
     
     // 设置账号
     [self.xmppStream setMyJID:myJid];
+    
+    self.password = password;
     // 连接
     NSError *error;
     [self.xmppStream connectWithTimeout:XMPPStreamTimeoutNone error:&error];
     
+    [self activate];
+    
     if (error) {
         NSLog(@"error1 = %@",error);
     } else {
-        self.password = password;
+        
         NSLog(@"登录成功");
     }
+}
+
+#pragma mark -- 功能模块
+// 自动重连
+- (XMPPReconnect *)xmppReconnect {
+    if (!_xmppReconnect) {
+        _xmppReconnect = [[XMPPReconnect alloc] initWithDispatchQueue:dispatch_get_main_queue()];;
+        // 设置参数
+        // 设置代理
+        [_xmppReconnect addDelegate:self delegateQueue:dispatch_get_main_queue()];
+        // 间隔时间
+        _xmppReconnect.reconnectTimerInterval = 1;
+    }
+    return _xmppReconnect;
+}
+
+// 心跳检测
+- (XMPPAutoPing *)xmppAutoPing {
+    if (!_xmppAutoPing) {
+        _xmppAutoPing = [[XMPPAutoPing alloc] initWithDispatchQueue:dispatch_get_main_queue()];
+        // 设置参数
+        // 设置代理
+        [_xmppAutoPing addDelegate:self delegateQueue:dispatch_get_main_queue()];
+        // 间隔时间
+        _xmppAutoPing.pingInterval = 260;
+    }
+    return _xmppAutoPing;
+}
+
+// 好友花名册
+- (XMPPRoster *)xmppRoster {
+    if (!_xmppRoster) {
+        _xmppRoster = [[XMPPRoster alloc] initWithRosterStorage:[XMPPRosterCoreDataStorage sharedInstance] dispatchQueue:dispatch_get_global_queue(0, 0)];
+        // 设置参数
+        // 是否自动更新好友
+        _xmppRoster.autoFetchRoster = YES;
+        
+        // 是否自动删除用户存储的数据
+        _xmppRoster.autoClearAllUsersAndResources = NO;
+        
+        // 是否自动加好友
+        _xmppRoster.autoAcceptKnownPresenceSubscriptionRequests = NO;
+        
+        // 设置代理
+        [_xmppRoster addDelegate:self delegateQueue:dispatch_get_global_queue(0, 0)];
+    }
+    return _xmppRoster;
+}
+
+// 消息模块
+- (XMPPMessageArchiving *)xmppMessageArchiving {
+    if (!_xmppMessageArchiving) {
+        _xmppMessageArchiving = [[XMPPMessageArchiving alloc] initWithMessageArchivingStorage:[XMPPMessageArchivingCoreDataStorage sharedInstance] dispatchQueue:dispatch_get_main_queue()];
+    }
+    return _xmppMessageArchiving;
+}
+
+// 个人资料模块
+- (XMPPvCardTempModule *)xmppVCardTempModule {
+    if (!_xmppVCardTempModule) {
+        _xmppVCardTempModule = [[XMPPvCardTempModule alloc] initWithvCardStorage:[XMPPvCardCoreDataStorage sharedInstance]];
+    }
+    return _xmppVCardTempModule;
+}
+
+// 头像模块
+- (XMPPvCardAvatarModule *)xmppVCardAvatarModule {
+    if (!_xmppVCardAvatarModule) {
+        _xmppVCardAvatarModule = [[XMPPvCardAvatarModule alloc] initWithvCardTempModule:_xmppVCardTempModule];
+    }
+    return _xmppVCardAvatarModule;
+}
+
+// 激活模块
+- (void)activate {
+    // 激活自动重连
+    [self.xmppReconnect activate:self.xmppStream];
+    
+    // 激活心跳检测
+    [self.xmppAutoPing activate:self.xmppStream];
+    
+    // 激活好友列表
+    [self.xmppRoster activate:self.xmppStream];
+    
+    // 激活消息模块
+    [self.xmppMessageArchiving activate:self.xmppStream];
+    
+    // 激活个人资料
+    [self.xmppVCardTempModule activate:self.xmppStream];
+    
+    // 激活个人头像
+    [self.xmppVCardAvatarModule activate:self.xmppStream];
 }
 
 // 返回连接结果的代理方法
 - (void)xmppStreamDidConnect:(XMPPStream *)sender {
     
-    NSLog(@"password = %@",self.password);
     
-    NSError *error;
     // 认证
+    NSError *error;
     [self.xmppStream authenticateWithPassword:self.password error:&error];
     
     // 可以注册,匿名登录(需要后台支持)
     //[self.xmppStream authenticateAnonymously:nil];
-    //[self.xmppStream registerWithPassword:nil error:nil];
+    [self.xmppStream registerWithPassword:self.password error:nil];
     if (error) {
         NSLog(@"error2 = %@",error);
     } else {
         NSLog(@"连接成功");
     }
-    
 }
 
 // 返回认证结果的代理方法

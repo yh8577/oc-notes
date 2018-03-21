@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A69D87142062C2B600BDC72B /* YHRecentlyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D87132062C2B600BDC72B /* YHRecentlyTableViewController.m */; };
 		A6A77AFE20610CAD00ADBBCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A77AFD20610CAD00ADBBCC /* AppDelegate.m */; };
-		A6A77B0120610CAD00ADBBCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A77B0020610CAD00ADBBCC /* ViewController.m */; };
 		A6A77B0420610CAD00ADBBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A77B0220610CAD00ADBBCC /* Main.storyboard */; };
 		A6A77B0620610CAD00ADBBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A77B0520610CAD00ADBBCC /* Assets.xcassets */; };
 		A6A77B0920610CAD00ADBBCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A77B0720610CAD00ADBBCC /* LaunchScreen.storyboard */; };
@@ -16,6 +16,8 @@
 		A6A77B1620610CAD00ADBBCC /* XMPP_WXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A77B1520610CAD00ADBBCC /* XMPP_WXTests.m */; };
 		A6A77B2120610CAD00ADBBCC /* XMPP_WXUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A77B2020610CAD00ADBBCC /* XMPP_WXUITests.m */; };
 		A6A77B352061117F00ADBBCC /* YHManagerStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A77B342061117F00ADBBCC /* YHManagerStream.m */; };
+		A6EB3075206244300013342D /* YHRosterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EB3074206244300013342D /* YHRosterTableViewController.m */; };
+		A6EB3078206253E20013342D /* YHChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EB3077206253E20013342D /* YHChatViewController.m */; };
 		D1913A0EBA0FAA79FAA71EA5 /* Pods_XMPP_WX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E30129E240461AA8933765 /* Pods_XMPP_WX.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +41,11 @@
 /* Begin PBXFileReference section */
 		15E30129E240461AA8933765 /* Pods_XMPP_WX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMPP_WX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FD94F762EFC1660DA34597 /* Pods-XMPP_WX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP_WX.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP_WX/Pods-XMPP_WX.release.xcconfig"; sourceTree = "<group>"; };
+		A69D87122062C2B600BDC72B /* YHRecentlyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHRecentlyTableViewController.h; sourceTree = "<group>"; };
+		A69D87132062C2B600BDC72B /* YHRecentlyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHRecentlyTableViewController.m; sourceTree = "<group>"; };
 		A6A77AF920610CAD00ADBBCC /* XMPP_WX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPP_WX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A77AFC20610CAD00ADBBCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6A77AFD20610CAD00ADBBCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A6A77AFF20610CAD00ADBBCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A6A77B0020610CAD00ADBBCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A6A77B0320610CAD00ADBBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6A77B0520610CAD00ADBBCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6A77B0820610CAD00ADBBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,10 @@
 		A6A77B2220610CAD00ADBBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6A77B332061117F00ADBBCC /* YHManagerStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHManagerStream.h; sourceTree = "<group>"; };
 		A6A77B342061117F00ADBBCC /* YHManagerStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHManagerStream.m; sourceTree = "<group>"; };
+		A6EB3073206244300013342D /* YHRosterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHRosterTableViewController.h; sourceTree = "<group>"; };
+		A6EB3074206244300013342D /* YHRosterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHRosterTableViewController.m; sourceTree = "<group>"; };
+		A6EB3076206253E20013342D /* YHChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHChatViewController.h; sourceTree = "<group>"; };
+		A6EB3077206253E20013342D /* YHChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHChatViewController.m; sourceTree = "<group>"; };
 		F6B2C876269F5E125D58E2B4 /* Pods-XMPP_WX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP_WX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP_WX/Pods-XMPP_WX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +128,12 @@
 				A6A77B322061111700ADBBCC /* Tools */,
 				A6A77AFC20610CAD00ADBBCC /* AppDelegate.h */,
 				A6A77AFD20610CAD00ADBBCC /* AppDelegate.m */,
-				A6A77AFF20610CAD00ADBBCC /* ViewController.h */,
-				A6A77B0020610CAD00ADBBCC /* ViewController.m */,
+				A6EB3073206244300013342D /* YHRosterTableViewController.h */,
+				A6EB3074206244300013342D /* YHRosterTableViewController.m */,
+				A69D87122062C2B600BDC72B /* YHRecentlyTableViewController.h */,
+				A69D87132062C2B600BDC72B /* YHRecentlyTableViewController.m */,
+				A6EB3076206253E20013342D /* YHChatViewController.h */,
+				A6EB3077206253E20013342D /* YHChatViewController.m */,
 				A6A77B0220610CAD00ADBBCC /* Main.storyboard */,
 				A6A77B0520610CAD00ADBBCC /* Assets.xcassets */,
 				A6A77B0720610CAD00ADBBCC /* LaunchScreen.storyboard */,
@@ -370,10 +380,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69D87142062C2B600BDC72B /* YHRecentlyTableViewController.m in Sources */,
 				A6A77B352061117F00ADBBCC /* YHManagerStream.m in Sources */,
-				A6A77B0120610CAD00ADBBCC /* ViewController.m in Sources */,
+				A6EB3075206244300013342D /* YHRosterTableViewController.m in Sources */,
 				A6A77B0C20610CAD00ADBBCC /* main.m in Sources */,
 				A6A77AFE20610CAD00ADBBCC /* AppDelegate.m in Sources */,
+				A6EB3078206253E20013342D /* YHChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
