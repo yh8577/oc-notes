@@ -21,10 +21,11 @@
 @property (nonatomic, strong) XMPPRoster *xmppRoster;
 // 好友消息
 @property (nonatomic, strong) XMPPMessageArchiving *xmppMessageArchiving;
-// 个人资料
+// 自己资料
 @property (nonatomic, strong) XMPPvCardTempModule *xmppVCardTempModule;
-// 个人头像
+// 指定用户资料
 @property (nonatomic , strong) XMPPvCardAvatarModule *xmppVCardAvatarModule;
+
 // 单例
 + (instancetype)sharedInstance;
 

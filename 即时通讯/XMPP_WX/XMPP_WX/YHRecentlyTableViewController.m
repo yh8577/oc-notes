@@ -9,7 +9,7 @@
 #import "YHRecentlyTableViewController.h"
 #import "YHManagerStream.h"
 #import "YHChatViewController.h"
-@interface YHRecentlyTableViewController ()<NSFetchedResultsControllerDelegate>
+@interface YHRecentlyTableViewController ()<NSFetchedResultsControllerDelegate,XMPPvCardAvatarDelegate>
 // 查询控制器
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 // 好友列表数据
@@ -24,7 +24,6 @@
     }
     return _recentlyArrs;
 }
-
 
 - (NSFetchedResultsController *)fetchedResultsController {
     if (!_fetchedResultsController) {
@@ -48,6 +47,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [NSFetchedResultsController deleteCacheWithName:@"Recently"];
+    
+    // 设置代理
+    [[YHManagerStream sharedInstance].xmppVCardAvatarModule addDelegate:self delegateQueue:dispatch_get_main_queue()];
     
     // 获取数据
     NSError *err;
@@ -79,6 +83,10 @@
 
 #pragma mark - Table view data source
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.recentlyArrs.count;
 }
@@ -90,25 +98,22 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Recently_cell" forIndexPath:indexPath];
     
-    UILabel *nameLabel = [cell viewWithTag:1002];
-    UILabel *lastMessage = [cell viewWithTag:1003];
+    UIImageView *iconView = [cell viewWithTag:1001];
+    iconView.image = [UIImage imageWithData:[[YHManagerStream sharedInstance].xmppVCardAvatarModule photoDataForJID:contact.bareJid]];
     
+    UILabel *nameLabel = [cell viewWithTag:1002];
     nameLabel.text = contact.bareJidStr;
-    lastMessage.text = contact.mostRecentMessageBody;
+    
+    UILabel *lastMessage = [cell viewWithTag:1003];
+    lastMessage.text = [NSString stringWithFormat:@"最近信息:%@,%@",contact.mostRecentMessageBody,contact.mostRecentMessageTimestamp];
+
+    
     
     return cell;
 }
 
-
+- (void)xmppvCardAvatarModule:(XMPPvCardAvatarModule *)vCardTempModule didReceivePhoto:(UIImage *)photo forJID:(XMPPJID *)jid {
+    [self.tableView reloadData];
+}
 @end
-
-
-
-
-
-
-
-
-
-
 

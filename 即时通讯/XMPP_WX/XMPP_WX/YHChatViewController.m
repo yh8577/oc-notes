@@ -33,7 +33,9 @@
     
     [NSFetchedResultsController deleteCacheWithName:@"messages"];
     [self.fetchedResultsController performFetch:nil];
-    [[YHManagerStream sharedInstance].xmppMessageArchiving addDelegate:self delegateQueue:dispatch_get_main_queue()];
+    
+    [[YHManagerStream sharedInstance].xmppVCardAvatarModule addDelegate:self delegateQueue:dispatch_get_main_queue()];
+
     
     NSError *err;
     [self.fetchedResultsController performFetch:&err];
@@ -138,6 +140,13 @@
     UILabel *messageLabel = [cell viewWithTag:1002];
     messageLabel.text = msg.body;
     
+    UIImageView *iconView = [cell viewWithTag:1001];
+    if (msg.isOutgoing) {
+        iconView.image = [UIImage imageWithData:[YHManagerStream sharedInstance].xmppVCardTempModule.myvCardTemp.photo];
+    } else {
+        iconView.image = [UIImage imageWithData:[[YHManagerStream sharedInstance].xmppVCardAvatarModule photoDataForJID:msg.bareJid]];
+    }
+    
     return cell;
 }
 
@@ -169,6 +178,8 @@
 {
     [self.tableView reloadData];
 }
+
+
 
 @end
 

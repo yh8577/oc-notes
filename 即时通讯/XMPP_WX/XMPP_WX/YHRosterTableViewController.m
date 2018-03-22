@@ -31,7 +31,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-     
+     [NSFetchedResultsController deleteCacheWithName:@"Rosters"];
     // 设置好友代理
     [[YHManagerStream sharedInstance].xmppRoster addDelegate:self delegateQueue:dispatch_get_global_queue(0, 0)];
     // 获取数据
@@ -94,8 +94,27 @@
 #pragma mark - XMPPRosterDelegate
 
 - (void)xmppRoster:(XMPPRoster *)sender didReceivePresenceSubscriptionRequest:(XMPPPresence *)presence {
+    
+    if (!presence.from) {
+        return;
+    }
     // 同意添加对方为好友
-    [[YHManagerStream sharedInstance].xmppRoster acceptPresenceSubscriptionRequestFrom:[XMPPJID jidWithUser:self.friends.text domain:@"www.huig.com" resource:@"iOS_iphone 11"] andAddToRoster:YES];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"添加好友" message:[NSString stringWithFormat:@"%@请求添加您为好友您是否同意",presence.from] preferredStyle:(UIAlertControllerStyleAlert)];
+    
+    UIAlertAction *actionOk = [UIAlertAction actionWithTitle:@"同意" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+        // 同意添加对方为好友
+        [[YHManagerStream sharedInstance].xmppRoster acceptPresenceSubscriptionRequestFrom:presence.from andAddToRoster:YES];
+    }];
+    
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"不同意" style:(UIAlertActionStyleCancel) handler:nil];
+    [alert addAction:cancel];
+    [alert addAction:actionOk];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:alert animated:YES completion:nil];
+    });
+    
+    
 }
 
 #pragma mark - FetchedResultsController Delegate
@@ -126,6 +145,10 @@
     
     static NSString *Roster_cell = @"Roster_cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Roster_cell forIndexPath:indexPath];
+    
+    UIImageView *iconView = [cell viewWithTag:1001];
+    iconView.image = [UIImage imageWithData:[[YHManagerStream sharedInstance].xmppVCardAvatarModule photoDataForJID:roster.jid]];
+    
     UILabel *name = [cell viewWithTag:1002];
     name.text = roster.jidStr;
     

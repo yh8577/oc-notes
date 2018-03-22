@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A69D87142062C2B600BDC72B /* YHRecentlyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D87132062C2B600BDC72B /* YHRecentlyTableViewController.m */; };
+		A69D87172063916600BDC72B /* YHMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D87162063916600BDC72B /* YHMeTableViewController.m */; };
+		A69D871A2063918500BDC72B /* YHDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D87192063918500BDC72B /* YHDetailTableViewController.m */; };
+		A69D871D2063919D00BDC72B /* YHUpdataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D871C2063919D00BDC72B /* YHUpdataTableViewController.m */; };
 		A6A77AFE20610CAD00ADBBCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A77AFD20610CAD00ADBBCC /* AppDelegate.m */; };
 		A6A77B0420610CAD00ADBBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A77B0220610CAD00ADBBCC /* Main.storyboard */; };
 		A6A77B0620610CAD00ADBBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A77B0520610CAD00ADBBCC /* Assets.xcassets */; };
@@ -43,6 +46,12 @@
 		69FD94F762EFC1660DA34597 /* Pods-XMPP_WX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP_WX.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP_WX/Pods-XMPP_WX.release.xcconfig"; sourceTree = "<group>"; };
 		A69D87122062C2B600BDC72B /* YHRecentlyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHRecentlyTableViewController.h; sourceTree = "<group>"; };
 		A69D87132062C2B600BDC72B /* YHRecentlyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHRecentlyTableViewController.m; sourceTree = "<group>"; };
+		A69D87152063916600BDC72B /* YHMeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHMeTableViewController.h; sourceTree = "<group>"; };
+		A69D87162063916600BDC72B /* YHMeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHMeTableViewController.m; sourceTree = "<group>"; };
+		A69D87182063918500BDC72B /* YHDetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDetailTableViewController.h; sourceTree = "<group>"; };
+		A69D87192063918500BDC72B /* YHDetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDetailTableViewController.m; sourceTree = "<group>"; };
+		A69D871B2063919D00BDC72B /* YHUpdataTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHUpdataTableViewController.h; sourceTree = "<group>"; };
+		A69D871C2063919D00BDC72B /* YHUpdataTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHUpdataTableViewController.m; sourceTree = "<group>"; };
 		A6A77AF920610CAD00ADBBCC /* XMPP_WX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPP_WX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A77AFC20610CAD00ADBBCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6A77AFD20610CAD00ADBBCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -134,6 +143,12 @@
 				A69D87132062C2B600BDC72B /* YHRecentlyTableViewController.m */,
 				A6EB3076206253E20013342D /* YHChatViewController.h */,
 				A6EB3077206253E20013342D /* YHChatViewController.m */,
+				A69D87152063916600BDC72B /* YHMeTableViewController.h */,
+				A69D87162063916600BDC72B /* YHMeTableViewController.m */,
+				A69D87182063918500BDC72B /* YHDetailTableViewController.h */,
+				A69D87192063918500BDC72B /* YHDetailTableViewController.m */,
+				A69D871B2063919D00BDC72B /* YHUpdataTableViewController.h */,
+				A69D871C2063919D00BDC72B /* YHUpdataTableViewController.m */,
 				A6A77B0220610CAD00ADBBCC /* Main.storyboard */,
 				A6A77B0520610CAD00ADBBCC /* Assets.xcassets */,
 				A6A77B0720610CAD00ADBBCC /* LaunchScreen.storyboard */,
@@ -381,8 +396,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69D87142062C2B600BDC72B /* YHRecentlyTableViewController.m in Sources */,
+				A69D871D2063919D00BDC72B /* YHUpdataTableViewController.m in Sources */,
 				A6A77B352061117F00ADBBCC /* YHManagerStream.m in Sources */,
 				A6EB3075206244300013342D /* YHRosterTableViewController.m in Sources */,
+				A69D871A2063918500BDC72B /* YHDetailTableViewController.m in Sources */,
+				A69D87172063916600BDC72B /* YHMeTableViewController.m in Sources */,
 				A6A77B0C20610CAD00ADBBCC /* main.m in Sources */,
 				A6A77AFE20610CAD00ADBBCC /* AppDelegate.m in Sources */,
 				A6EB3078206253E20013342D /* YHChatViewController.m in Sources */,

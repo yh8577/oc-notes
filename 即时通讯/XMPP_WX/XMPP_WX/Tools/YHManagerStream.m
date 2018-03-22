@@ -33,7 +33,8 @@ static YHManagerStream *sharedInstance;
 - (XMPPStream *)xmppStream {
     if (!_xmppStream) {
         _xmppStream = [[XMPPStream alloc] init];
-        _xmppStream.hostName = @"127.0.0.1";
+//        _xmppStream.hostName = @"127.0.0.1";
+        _xmppStream.hostName = @"192.168.31.186";
         _xmppStream.hostPort = 5222;
         // xmpp的代理是多播代理
         [_xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
@@ -46,18 +47,14 @@ static YHManagerStream *sharedInstance;
     
     // 设置账号
     [self.xmppStream setMyJID:myJid];
-    
     self.password = password;
     // 连接
     NSError *error;
     [self.xmppStream connectWithTimeout:XMPPStreamTimeoutNone error:&error];
-    
     [self activate];
-    
     if (error) {
         NSLog(@"error1 = %@",error);
     } else {
-        
         NSLog(@"登录成功");
     }
 }
@@ -96,13 +93,10 @@ static YHManagerStream *sharedInstance;
         // 设置参数
         // 是否自动更新好友
         _xmppRoster.autoFetchRoster = YES;
-        
         // 是否自动删除用户存储的数据
         _xmppRoster.autoClearAllUsersAndResources = NO;
-        
         // 是否自动加好友
         _xmppRoster.autoAcceptKnownPresenceSubscriptionRequests = NO;
-        
         // 设置代理
         [_xmppRoster addDelegate:self delegateQueue:dispatch_get_global_queue(0, 0)];
     }
@@ -120,15 +114,15 @@ static YHManagerStream *sharedInstance;
 // 个人资料模块
 - (XMPPvCardTempModule *)xmppVCardTempModule {
     if (!_xmppVCardTempModule) {
-        _xmppVCardTempModule = [[XMPPvCardTempModule alloc] initWithvCardStorage:[XMPPvCardCoreDataStorage sharedInstance]];
+        _xmppVCardTempModule = [[XMPPvCardTempModule alloc] initWithvCardStorage:[XMPPvCardCoreDataStorage sharedInstance] dispatchQueue:dispatch_get_main_queue()];
     }
     return _xmppVCardTempModule;
 }
 
-// 头像模块
+// 指定用户资料模块
 - (XMPPvCardAvatarModule *)xmppVCardAvatarModule {
     if (!_xmppVCardAvatarModule) {
-        _xmppVCardAvatarModule = [[XMPPvCardAvatarModule alloc] initWithvCardTempModule:_xmppVCardTempModule];
+        _xmppVCardAvatarModule = [[XMPPvCardAvatarModule alloc] initWithvCardTempModule:_xmppVCardTempModule dispatchQueue:dispatch_get_main_queue()];
     }
     return _xmppVCardAvatarModule;
 }

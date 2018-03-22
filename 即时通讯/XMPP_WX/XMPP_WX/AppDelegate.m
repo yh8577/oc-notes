@@ -14,14 +14,13 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor lightGrayColor]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
     
-    [[YHManagerStream sharedInstance] loginToServer:[XMPPJID jidWithUser:@"huig" domain:@"www.huig.com" resource:nil] andPassword:@"123"];
+    [[YHManagerStream sharedInstance] loginToServer:[XMPPJID jidWithUser:@"wangwu" domain:@"www.huig.com" resource:nil] andPassword:@"123"];
     
     // 注册本地通知
     UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeNone | UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert) categories:nil];
