@@ -9,6 +9,7 @@
 #import "YHRecentlyTableViewController.h"
 #import "YHManagerStream.h"
 #import "YHChatViewController.h"
+#import "YHMUCRoomManager.h"
 @interface YHRecentlyTableViewController ()<NSFetchedResultsControllerDelegate,XMPPvCardAvatarDelegate>
 // 查询控制器
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
@@ -64,6 +65,12 @@
     
 }
 
+- (IBAction)addRoom:(id)sender {
+    
+    [[YHMUCRoomManager sharedInstance] joinOrCreateWithRoomJid:[XMPPJID jidWithUser:@"NewIOS" domain:@"newios.www.huig.com" resource:nil] andNickName:@"中国iphone手机"];
+    
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)cell {
     
     XMPPMessageArchiving_Contact_CoreDataObject *contact  = self.recentlyArrs[[self.tableView indexPathForCell:cell].row];
@@ -106,9 +113,6 @@
     
     UILabel *lastMessage = [cell viewWithTag:1003];
     lastMessage.text = [NSString stringWithFormat:@"最近信息:%@,%@",contact.mostRecentMessageBody,contact.mostRecentMessageTimestamp];
-
-    
-    
     return cell;
 }
 

@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A69D877020640DB200BDC72B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D876F20640DB200BDC72B /* AppDelegate.m */; };
+		A69D877320640DB200BDC72B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D877220640DB200BDC72B /* ViewController.m */; };
+		A69D877620640DB200BDC72B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69D877420640DB200BDC72B /* Main.storyboard */; };
+		A69D877820640DB200BDC72B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69D877720640DB200BDC72B /* Assets.xcassets */; };
+		A69D877B20640DB200BDC72B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69D877920640DB200BDC72B /* LaunchScreen.storyboard */; };
+		A69D877E20640DB200BDC72B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D877D20640DB200BDC72B /* main.m */; };
+		A69D878820640DB200BDC72B /* RongYunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D878720640DB200BDC72B /* RongYunTests.m */; };
+		A69D879320640DB200BDC72B /* RongYunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D879220640DB200BDC72B /* RongYunUITests.m */; };
+		A69D87A2206411E600BDC72B /* YHChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D87A1206411E600BDC72B /* YHChatListViewController.m */; };
+		E9A295D8CB39FD59918B3C77 /* libPods-RongYun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DF40B14045C80579C03125 /* libPods-RongYun.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A69D878420640DB200BDC72B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A69D876320640DB200BDC72B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A69D876A20640DB200BDC72B;
+			remoteInfo = RongYun;
+		};
+		A69D878F20640DB200BDC72B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A69D876320640DB200BDC72B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A69D876A20640DB200BDC72B;
+			remoteInfo = RongYun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0583B9B8E49373ABC54AD0AF /* Pods-RongYun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongYun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongYun/Pods-RongYun.debug.xcconfig"; sourceTree = "<group>"; };
+		34DF40B14045C80579C03125 /* libPods-RongYun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RongYun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA689CBA250D9B3DCEE04E7 /* Pods-RongYun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongYun.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongYun/Pods-RongYun.release.xcconfig"; sourceTree = "<group>"; };
+		A69D876B20640DB200BDC72B /* RongYun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongYun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A69D876E20640DB200BDC72B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A69D876F20640DB200BDC72B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A69D877120640DB200BDC72B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A69D877220640DB200BDC72B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A69D877520640DB200BDC72B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A69D877720640DB200BDC72B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A69D877A20640DB200BDC72B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A69D877C20640DB200BDC72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A69D877D20640DB200BDC72B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A69D878320640DB200BDC72B /* RongYunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RongYunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A69D878720640DB200BDC72B /* RongYunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RongYunTests.m; sourceTree = "<group>"; };
+		A69D878920640DB200BDC72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A69D878E20640DB200BDC72B /* RongYunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RongYunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A69D879220640DB200BDC72B /* RongYunUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RongYunUITests.m; sourceTree = "<group>"; };
+		A69D879420640DB200BDC72B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A69D87A0206411E600BDC72B /* YHChatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHChatListViewController.h; sourceTree = "<group>"; };
+		A69D87A1206411E600BDC72B /* YHChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHChatListViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A69D876820640DB200BDC72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A295D8CB39FD59918B3C77 /* libPods-RongYun.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A69D878020640DB200BDC72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A69D878B20640DB200BDC72B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		053AB808E69C815A648AB35C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0583B9B8E49373ABC54AD0AF /* Pods-RongYun.debug.xcconfig */,
+				3FA689CBA250D9B3DCEE04E7 /* Pods-RongYun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98377F3847180150E2B86BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34DF40B14045C80579C03125 /* libPods-RongYun.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A69D876220640DB200BDC72B = {
+			isa = PBXGroup;
+			children = (
+				A69D876D20640DB200BDC72B /* RongYun */,
+				A69D878620640DB200BDC72B /* RongYunTests */,
+				A69D879120640DB200BDC72B /* RongYunUITests */,
+				A69D876C20640DB200BDC72B /* Products */,
+				053AB808E69C815A648AB35C /* Pods */,
+				98377F3847180150E2B86BBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A69D876C20640DB200BDC72B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A69D876B20640DB200BDC72B /* RongYun.app */,
+				A69D878320640DB200BDC72B /* RongYunTests.xctest */,
+				A69D878E20640DB200BDC72B /* RongYunUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A69D876D20640DB200BDC72B /* RongYun */ = {
+			isa = PBXGroup;
+			children = (
+				A69D876E20640DB200BDC72B /* AppDelegate.h */,
+				A69D876F20640DB200BDC72B /* AppDelegate.m */,
+				A69D877120640DB200BDC72B /* ViewController.h */,
+				A69D877220640DB200BDC72B /* ViewController.m */,
+				A69D87A0206411E600BDC72B /* YHChatListViewController.h */,
+				A69D87A1206411E600BDC72B /* YHChatListViewController.m */,
+				A69D877420640DB200BDC72B /* Main.storyboard */,
+				A69D877720640DB200BDC72B /* Assets.xcassets */,
+				A69D877920640DB200BDC72B /* LaunchScreen.storyboard */,
+				A69D877C20640DB200BDC72B /* Info.plist */,
+				A69D877D20640DB200BDC72B /* main.m */,
+			);
+			path = RongYun;
+			sourceTree = "<group>";
+		};
+		A69D878620640DB200BDC72B /* RongYunTests */ = {
+			isa = PBXGroup;
+			children = (
+				A69D878720640DB200BDC72B /* RongYunTests.m */,
+				A69D878920640DB200BDC72B /* Info.plist */,
+			);
+			path = RongYunTests;
+			sourceTree = "<group>";
+		};
+		A69D879120640DB200BDC72B /* RongYunUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A69D879220640DB200BDC72B /* RongYunUITests.m */,
+				A69D879420640DB200BDC72B /* Info.plist */,
+			);
+			path = RongYunUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A69D876A20640DB200BDC72B /* RongYun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A69D879720640DB200BDC72B /* Build configuration list for PBXNativeTarget "RongYun" */;
+			buildPhases = (
+				0F489B7E543CE03D61B49E6B /* [CP] Check Pods Manifest.lock */,
+				A69D876720640DB200BDC72B /* Sources */,
+				A69D876820640DB200BDC72B /* Frameworks */,
+				A69D876920640DB200BDC72B /* Resources */,
+				D1348B693C6EDA92C64FC5AA /* [CP] Embed Pods Frameworks */,
+				79E307AAB14C4A90F1C636CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RongYun;
+			productName = RongYun;
+			productReference = A69D876B20640DB200BDC72B /* RongYun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A69D878220640DB200BDC72B /* RongYunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A69D879A20640DB200BDC72B /* Build configuration list for PBXNativeTarget "RongYunTests" */;
+			buildPhases = (
+				A69D877F20640DB200BDC72B /* Sources */,
+				A69D878020640DB200BDC72B /* Frameworks */,
+				A69D878120640DB200BDC72B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A69D878520640DB200BDC72B /* PBXTargetDependency */,
+			);
+			name = RongYunTests;
+			productName = RongYunTests;
+			productReference = A69D878320640DB200BDC72B /* RongYunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A69D878D20640DB200BDC72B /* RongYunUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A69D879D20640DB200BDC72B /* Build configuration list for PBXNativeTarget "RongYunUITests" */;
+			buildPhases = (
+				A69D878A20640DB200BDC72B /* Sources */,
+				A69D878B20640DB200BDC72B /* Frameworks */,
+				A69D878C20640DB200BDC72B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A69D879020640DB200BDC72B /* PBXTargetDependency */,
+			);
+			name = RongYunUITests;
+			productName = RongYunUITests;
+			productReference = A69D878E20640DB200BDC72B /* RongYunUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A69D876320640DB200BDC72B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = huig;
+				TargetAttributes = {
+					A69D876A20640DB200BDC72B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A69D878220640DB200BDC72B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A69D876A20640DB200BDC72B;
+					};
+					A69D878D20640DB200BDC72B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A69D876A20640DB200BDC72B;
+					};
+				};
+			};
+			buildConfigurationList = A69D876620640DB200BDC72B /* Build configuration list for PBXProject "RongYun" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A69D876220640DB200BDC72B;
+			productRefGroup = A69D876C20640DB200BDC72B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A69D876A20640DB200BDC72B /* RongYun */,
+				A69D878220640DB200BDC72B /* RongYunTests */,
+				A69D878D20640DB200BDC72B /* RongYunUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A69D876920640DB200BDC72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69D877B20640DB200BDC72B /* LaunchScreen.storyboard in Resources */,
+				A69D877820640DB200BDC72B /* Assets.xcassets in Resources */,
+				A69D877620640DB200BDC72B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A69D878120640DB200BDC72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A69D878C20640DB200BDC72B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F489B7E543CE03D61B49E6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RongYun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E307AAB14C4A90F1C636CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RongYun/Pods-RongYun-resources.sh",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/jrmf.cer",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/JrmfIMLib/WalletResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/jrmf.cer",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WalletResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RongYun/Pods-RongYun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1348B693C6EDA92C64FC5AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RongYun/Pods-RongYun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A69D876720640DB200BDC72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69D877320640DB200BDC72B /* ViewController.m in Sources */,
+				A69D87A2206411E600BDC72B /* YHChatListViewController.m in Sources */,
+				A69D877E20640DB200BDC72B /* main.m in Sources */,
+				A69D877020640DB200BDC72B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A69D877F20640DB200BDC72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69D878820640DB200BDC72B /* RongYunTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A69D878A20640DB200BDC72B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69D879320640DB200BDC72B /* RongYunUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A69D878520640DB200BDC72B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A69D876A20640DB200BDC72B /* RongYun */;
+			targetProxy = A69D878420640DB200BDC72B /* PBXContainerItemProxy */;
+		};
+		A69D879020640DB200BDC72B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A69D876A20640DB200BDC72B /* RongYun */;
+			targetProxy = A69D878F20640DB200BDC72B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A69D877420640DB200BDC72B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A69D877520640DB200BDC72B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A69D877920640DB200BDC72B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A69D877A20640DB200BDC72B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A69D879520640DB200BDC72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A69D879620640DB200BDC72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A69D879820640DB200BDC72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0583B9B8E49373ABC54AD0AF /* Pods-RongYun.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RongYun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huig.test.RongYun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A69D879920640DB200BDC72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FA689CBA250D9B3DCEE04E7 /* Pods-RongYun.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RongYun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huig.test.RongYun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A69D879B20640DB200BDC72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RongYunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huig.test.RongYunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RongYun.app/RongYun";
+			};
+			name = Debug;
+		};
+		A69D879C20640DB200BDC72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RongYunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huig.test.RongYunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RongYun.app/RongYun";
+			};
+			name = Release;
+		};
+		A69D879E20640DB200BDC72B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RongYunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huig.test.RongYunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RongYun;
+			};
+			name = Debug;
+		};
+		A69D879F20640DB200BDC72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RongYunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huig.test.RongYunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RongYun;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A69D876620640DB200BDC72B /* Build configuration list for PBXProject "RongYun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A69D879520640DB200BDC72B /* Debug */,
+				A69D879620640DB200BDC72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A69D879720640DB200BDC72B /* Build configuration list for PBXNativeTarget "RongYun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A69D879820640DB200BDC72B /* Debug */,
+				A69D879920640DB200BDC72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A69D879A20640DB200BDC72B /* Build configuration list for PBXNativeTarget "RongYunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A69D879B20640DB200BDC72B /* Debug */,
+				A69D879C20640DB200BDC72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A69D879D20640DB200BDC72B /* Build configuration list for PBXNativeTarget "RongYunUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A69D879E20640DB200BDC72B /* Debug */,
+				A69D879F20640DB200BDC72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A69D876320640DB200BDC72B /* Project object */;
+}

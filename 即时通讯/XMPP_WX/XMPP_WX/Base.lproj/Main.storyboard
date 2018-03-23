@@ -179,7 +179,13 @@
                             <outlet property="delegate" destination="1jq-R9-unN" id="4Yc-Yy-d5w"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="最近联系" id="ZFd-KZ-0bA"/>
+                    <navigationItem key="navigationItem" title="最近联系" id="ZFd-KZ-0bA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hZQ-zW-6fx">
+                            <connections>
+                                <action selector="addRoom:" destination="1jq-R9-unN" id="qGb-RP-TBp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LIq-Mv-W5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -660,7 +666,7 @@
         <image name="tabbar_me" width="23" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Psu-p4-rSu"/>
+        <segue reference="873-Ef-U2x"/>
         <segue reference="EJl-Nr-nTc"/>
     </inferredMetricsTieBreakers>
 </document>

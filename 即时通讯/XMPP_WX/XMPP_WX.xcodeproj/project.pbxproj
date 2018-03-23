@@ -11,6 +11,7 @@
 		A69D87172063916600BDC72B /* YHMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D87162063916600BDC72B /* YHMeTableViewController.m */; };
 		A69D871A2063918500BDC72B /* YHDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D87192063918500BDC72B /* YHDetailTableViewController.m */; };
 		A69D871D2063919D00BDC72B /* YHUpdataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D871C2063919D00BDC72B /* YHUpdataTableViewController.m */; };
+		A69D87612063E45A00BDC72B /* YHMUCRoomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A69D87602063E45A00BDC72B /* YHMUCRoomManager.m */; };
 		A6A77AFE20610CAD00ADBBCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A77AFD20610CAD00ADBBCC /* AppDelegate.m */; };
 		A6A77B0420610CAD00ADBBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A77B0220610CAD00ADBBCC /* Main.storyboard */; };
 		A6A77B0620610CAD00ADBBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A77B0520610CAD00ADBBCC /* Assets.xcassets */; };
@@ -52,6 +53,8 @@
 		A69D87192063918500BDC72B /* YHDetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDetailTableViewController.m; sourceTree = "<group>"; };
 		A69D871B2063919D00BDC72B /* YHUpdataTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHUpdataTableViewController.h; sourceTree = "<group>"; };
 		A69D871C2063919D00BDC72B /* YHUpdataTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHUpdataTableViewController.m; sourceTree = "<group>"; };
+		A69D875F2063E45A00BDC72B /* YHMUCRoomManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHMUCRoomManager.h; sourceTree = "<group>"; };
+		A69D87602063E45A00BDC72B /* YHMUCRoomManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHMUCRoomManager.m; sourceTree = "<group>"; };
 		A6A77AF920610CAD00ADBBCC /* XMPP_WX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPP_WX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A77AFC20610CAD00ADBBCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6A77AFD20610CAD00ADBBCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 			children = (
 				A6A77B332061117F00ADBBCC /* YHManagerStream.h */,
 				A6A77B342061117F00ADBBCC /* YHManagerStream.m */,
+				A69D875F2063E45A00BDC72B /* YHMUCRoomManager.h */,
+				A69D87602063E45A00BDC72B /* YHMUCRoomManager.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 				A69D871A2063918500BDC72B /* YHDetailTableViewController.m in Sources */,
 				A69D87172063916600BDC72B /* YHMeTableViewController.m in Sources */,
 				A6A77B0C20610CAD00ADBBCC /* main.m in Sources */,
+				A69D87612063E45A00BDC72B /* YHMUCRoomManager.m in Sources */,
 				A6A77AFE20610CAD00ADBBCC /* AppDelegate.m in Sources */,
 				A6EB3078206253E20013342D /* YHChatViewController.m in Sources */,
 			);

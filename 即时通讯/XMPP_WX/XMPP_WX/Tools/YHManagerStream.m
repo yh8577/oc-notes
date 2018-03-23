@@ -151,7 +151,6 @@ static YHManagerStream *sharedInstance;
 // 返回连接结果的代理方法
 - (void)xmppStreamDidConnect:(XMPPStream *)sender {
     
-    
     // 认证
     NSError *error;
     [self.xmppStream authenticateWithPassword:self.password error:&error];
